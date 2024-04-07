@@ -1,0 +1,149 @@
+@import url(../../font_color.scss);
+
+#header {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  align-items: center;
+
+  img {
+    transform: rotate(90deg);
+    position: absolute;
+  }
+
+  #img1 {
+    left: 30px;
+    width: 3px;
+    height: 20px;
+  }
+
+  #img2 {
+    right: 0px;
+    width: 3px;
+    height: 175px;
+  }
+
+  h1 {
+    padding: 10px;
+  }
+}
+
+section {
+  position: relative;
+}
+
+#purpleLine1 {
+  background-color: rgb(151, 71, 255);
+  width: 20px;
+  height: 3px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+#purpleLine2 {
+  background-color: rgb(151, 71, 255);
+  width: 75px;
+  height: 5px;
+}
+
+#selection {
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+
+  img {
+    height: 15vh;
+  }
+}
+
+#liveTest {
+  padding: 15px 30px 15px 30px;
+  border-radius: 10px 10px 10px 10px;
+  background: #9747ff; 
+  cursor: pointer;
+
+  &:hover {
+    background-color: #70E61C;
+  }
+}
+
+#gitHub {
+  padding: 15px 30px 15px 30px;
+  gap: 10px;
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid #70E61C;
+  background-color: #141d2f;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: #70E61C;
+  }
+}
+
+.rowReverse {
+  flex-direction: row-reverse;
+}
+
+#purpleShadow3 {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .projects {
+    img {
+      height: 260px;
+    }
+  }
+
+  .displayFlex {
+    display: flex;
+  }
+
+  .flexColumnCenter {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .text {
+    padding: 0;
+  }
+
+  .padding {
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+
+  .width {
+    width: 50%;
+  }
+
+  .flexEnd {
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .justifyFlexEnd {
+    justify-content: flex-end;
+    padding-right: 0;
+  }
+
+  .sidePadding {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #purpleShadow3 {
+    display: flex;
+    position: absolute;
+    z-index: -999;
+    height: 700px;
+    top: 800px;
+  }
+}
+
+
+

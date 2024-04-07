@@ -1,0 +1,147 @@
+#introduction {
+  font-size: clamp(16px, 3vw, 4vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 5;
+}
+
+.vertical-text {
+  transform: rotate(-90deg);
+  font-weight: 400;
+  line-height: 77px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-size: clamp(20px, 5vw, 70px);
+}
+
+#name {
+  font-weight: 700;
+  font-size: clamp(35px, 10vw, 90px);
+}
+
+#special-text {
+  font-family: Poppins;
+  font-weight: 400;
+  color: #9747ff;
+  font-size: clamp(22px, 5vw, 60px);
+}
+
+.introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#second-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+#letsTalkDiv {
+  img {
+    width: clamp(100px, 12vw, 15vw);
+    cursor: pointer;
+  }
+}
+
+#myPicture {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  #photo_shadows {
+    height: 600px;
+    position: absolute;
+    z-index: -999;
+    width: clamp(500px, 90vw, 800px);
+    top: 0px;
+  }
+
+  #myPictureIMG {
+    height: clamp(400px, 70vw, 700px);
+    width: clamp(290px, 50vw, 500px);
+  }
+}
+
+.background {
+  width: 100%;
+  top: 330px;
+}
+
+@media screen and (min-width: 620px) {
+  .background {
+    top: 350px;
+  }
+}
+
+@media screen and (min-width: 665px) {
+  .background {
+    top: 380px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .background {
+    top: 490px;
+  }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  .background {
+    width: 150vw;
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #photo_shadows {
+    height: 560px;
+  }
+
+  #myPictureIMG {
+    height: 600px;
+  }
+
+  #myPicture {
+    width: 45vw;
+  }
+
+  #name {
+    font-size: 55px;
+  }
+
+  #special-text {
+    font-size: 40px;
+  }
+
+  .vertical-text {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 1210px) {
+  .background {
+    top: 400px;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .background {
+    top: 300px;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .background {
+    top: 200px;
+  }
+}

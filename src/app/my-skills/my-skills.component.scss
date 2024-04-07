@@ -1,0 +1,70 @@
+.mySkills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin-right: 25px;
+  }
+}
+
+.img {
+    &:hover {
+      transition: transform 0.1s ease-in-out;
+      transform: translateY(-10px);
+    }
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 17px;
+
+  img {
+    height: 45px;
+  }
+}
+
+.line-height {
+  line-height: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+.fontsOfMySkills {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+#mySkillsH1 {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  align-items: center;
+}
+
+#getInTouch {
+  width: 100px;
+}
+
+@media screen and (min-width: 1024px) {
+  section {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #mySkillsH1 {
+    width: 100%;
+  }
+
+  .grid {
+    width: 50%;
+  }
+}

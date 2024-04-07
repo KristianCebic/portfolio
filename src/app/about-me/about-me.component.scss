@@ -1,0 +1,175 @@
+section {
+  background-image: url("../../assets/img/background.png");
+}
+
+#aboutMe {
+  position: relative;
+}
+
+.socialMediaImg {
+  height: 25px;
+}
+
+#div1 {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  position: relative;
+  align-items: center;
+}
+
+#div2 {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.personalText {
+  padding: 15px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block; 
+  border-radius: 50%; 
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  img {
+    display: block; 
+    width: 100%;
+    height: 200px;
+    width: 120px;
+    background-size: cover;
+  }
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; 
+  height: 100%; 
+  border: 3px solid green; 
+  border-radius: 50%; 
+  box-sizing: border-box; 
+}
+
+.backGroundShadow {
+  height: 50vh;
+  position: absolute;
+  right: -40px;
+  z-index: -1;
+  top: -100px;
+}
+
+#div1 {
+  margin-top: 60px;
+}
+
+#socialMedia {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70vw;
+  
+  img {
+    &:hover {
+      transition: transform 0.1s ease-in-out;
+      transform: scale(1.5);
+      cursor: pointer;
+    }
+  }
+}
+
+#email {
+  display: none;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+#headDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid  rgb(112,230,28);
+  border-radius: 100%;
+  width: 370px;
+  height: 370px;
+  position: relative;
+  overflow: hidden;
+}
+
+#parentHeadDiv {
+  display: none;
+}
+
+#textAboutMe {
+  img {
+    &:hover {
+      transition: transform 0.1s ease-in-out;
+      transform: scale(1.2);
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #socialMedia {
+    justify-content: flex-start;
+    gap: 30px;
+  }
+
+  #email {
+    display: flex;
+  }
+
+  #aboutMe {
+    display: flex;
+  }
+
+  #div2 {
+    width: 50vw;
+  }
+
+  .backGroundShadow {
+    right: 0;
+  }
+
+  #head {
+    position: absolute;
+    top: 30px;
+    height: 340px;
+  }
+
+  #aboutMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #parentHeadDiv {
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #greenLine {
+    background-color: rgb(112, 230, 28);
+    width: 30%;
+    height: 5px;
+  }
+
+  #parentHeadDiv {
+    display: flex;
+  }
+
+  #social_media1 {
+    margin-left: 10%;
+  }
+}

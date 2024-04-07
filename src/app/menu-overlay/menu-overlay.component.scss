@@ -1,0 +1,15 @@
+#overlay {
+  background-color: rgb(65, 72, 86);
+  height: 500px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    line-height: 60px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 23px;
+  }
+}

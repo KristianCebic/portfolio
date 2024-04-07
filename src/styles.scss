@@ -1,1 +1,191 @@
-/* You can add global styles to this file, and also import other style files */
+@mixin padding($x) {
+  padding: #{$x}px;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: white;
+  background-color: #141d2f;
+  font-size: 14px;
+  overflow-x: hidden;
+  max-width: 1920px;
+}
+
+.rotateElement {
+  transform: rotate(-270deg);
+}
+
+.font_size14 {
+  font-size: 14px;
+}
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+}
+
+.flexCenterColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+.flexColumnCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  @include padding(15);
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.2px;
+  padding: 10px;
+}
+
+button {
+  color: white;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 27.6px;
+  text-align: left;
+  border: 0px;
+}
+
+.flexEvenly {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.padding {
+  @include padding(20);
+}
+
+.purpleLine {
+  width: 30px;
+  height: 3px;
+  background-color: #9747ff;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.flexAlignCenter {
+  display: flex;
+  align-items: center;
+}
+
+.flexEnd {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header {
+  width: 100vw;
+  height: 80px;
+  background-color: #141d2f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  font-size: clamp(13px, 2vw, 3vw);
+
+  #name {
+    padding-left: 5%;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .menu {
+    display: flex;
+    gap: 29px;
+    padding-right: 5%;
+
+    div {
+      cursor: pointer;
+      font-weight: 200;
+
+      &:hover {
+        color: rgb(112, 230, 28);
+      }
+    }
+  }
+}
+
+.last-letter {
+  color: #70e61c;
+}
+
+.header_overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10%;
+}
+
+.gap10 {
+  gap: 10px;
+}
+
+section {
+  margin-top: 50px;
+}
+
+.purpleLine2 {
+  background-color: rgb(151, 71, 255);
+  width: 75px;
+  height: 3px;
+}
+
+.button {
+  padding: 15px 30px 15px 30px;
+  border-radius: 10px;
+  background: rgb(112, 230, 28);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  height: 20px;
+  width: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin: 20px;
+  font-weight: 400;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #9747ff;
+    transition: transform 0.1s ease-in-out;
+    transform: scale(1.2);
+  }
+}
+
+.purpleLineMenu {
+  background-color: rgb(151, 71, 255);
+  width: 60px;
+  height: 3px;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
