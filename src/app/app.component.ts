@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ROUTES, RouterModule, RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { AboutMeComponent } from './about-me/about-me.component';
@@ -9,7 +9,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuOverlayComponent } from './menu-overlay/menu-overlay.component';
-import { ImpressumComponent } from './impressum/impressum.component';
+
 
 @Component({
   selector: 'app-root',
@@ -24,7 +24,6 @@ import { ImpressumComponent } from './impressum/impressum.component';
     ContactComponent,
     FooterComponent,
     MenuOverlayComponent,
-    ImpressumComponent,
     RouterModule,
   ],
   templateUrl: './app.component.html',

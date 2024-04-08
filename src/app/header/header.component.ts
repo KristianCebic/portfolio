@@ -48,4 +48,15 @@ export class HeaderComponent {
     }
   }
   
+  openMenu() {
+    const firstSection: HTMLElement = document.getElementById('firstSection') as HTMLElement;
+    firstSection.innerHTML = `
+      <div id="menuOverlay">
+        <a href="/">About me</a>
+        <a href="/">My skills</a>
+        <a href="/">Portfolio</a>
+        <a href="/">Contact</a>
+      </div>
+    `;
+  }
 }
