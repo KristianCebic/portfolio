@@ -14,6 +14,14 @@ body {
   max-width: 1920px;
 }
 
+input {
+  border: unset;
+}
+
+button {
+  border: unset;
+}
+
 .rotateElement {
   transform: rotate(-270deg);
 }
@@ -36,6 +44,8 @@ body {
 
 a {
   cursor: pointer;
+  color: white;
+  text-decoration: none;
 }
 
 h1 {
@@ -210,4 +220,8 @@ section {
 
 .cursorPointer {
   cursor: pointer;
+}
+
+#footer {
+  line-height: 45px;
 }

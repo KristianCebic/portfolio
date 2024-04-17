@@ -8,6 +8,9 @@ import { ContactComponent } from '../contact/contact.component';
 import { FooterComponent } from '../footer/footer.component';
 import { MenuOverlayComponent } from '../menu-overlay/menu-overlay.component';
 import { AppComponent } from '../app.component';
+import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+
 
 
 @Component({
@@ -23,10 +26,16 @@ import { AppComponent } from '../app.component';
     FooterComponent,
     MenuOverlayComponent,
     AppComponent,
+    RouterOutlet,
+    CommonModule,
   ],
   templateUrl: './mainpage.component.html',
   styleUrl: './mainpage.component.scss'
 })
 export class MainpageComponent {
+  isVisible: boolean = false;
 
+  toggleMenu(): void {
+    this.isVisible = !this.isVisible;
+  }
 }

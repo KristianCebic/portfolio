@@ -1,25 +1,54 @@
-<div id="imprint">
-  <h2>Impressum</h2>
-  <p>Angaben gemäß § 5 TMG</p>
-  <p>
-    Kristian Cebic<br />
-    Musterweg 1<br />
-    12345 Musterstadt<br />
-    Deutschland
-  </p>
-  <h3>Kontakt</h3>
-  <p>
-    Telefon: +49 123 4567890<br />
-    E-Mail: 
-  </p>
-  <h3>Umsatzsteuer-ID</h3>
-  <p>
-    Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br />
-    DE123456789
-  </p>
-  <h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h3>
-  <p>
-    Kristian Cebic<br />
-    Anschrift wie oben
-  </p>
-</div>
+<section>
+  <app-header (toggleMenu)="toggleMenu()"></app-header>
+  <app-menu-overlay (toggleMenu)="toggleMenu()" *ngIf="isVisible"></app-menu-overlay>
+
+  <div class="impressum-container">
+    <h1>Impressum</h1>
+    <p>Angaben gemäß § 5 TMG:</p>
+    <h2>Webseitenbetreiber</h2>
+    <p>Kristian Cebic</p>
+    <h2>Kontakt</h2>
+    <address>
+      Im Isengrind 9<br>
+      8046 Zürich<br>
+      Schweiz<br>
+      E-Mail: <a href="mailto:kristian.cebic13@gmail.com">kristian.cebic13&#64;gmail.com</a><br>
+      Telefon: <a href="tel:+410786903822">+41786903822</a>
+    </address>
+  </div>
+
+  <footer class="flexCenterColumn" id="footer">
+    <div class="lineHeight">
+      <h1 (click)="scrollToContainer('myPicture')">Kristian</h1>
+      <div id="impressum">
+        <a routerLink="/impressum">Impressum</a>
+        <div class="blueLine"></div>
+      </div>
+    </div>
+  
+    <div id="cebic">© Kristian Cebic 2024</div>
+  
+    <div class="socialMediaFooter">
+      <img
+        class="socialMediaImg"
+        src="../../assets/img/social_media1.png"
+        alt=""
+      />
+      <img
+        (click)="scrollToContainer('contact')"
+        class="socialMediaImg"
+        src="../../assets/img/social_media2.png"
+        alt=""
+      />
+      <img
+        class="socialMediaImg"
+        src="../../assets/img/social_media3.png"
+        alt=""
+      />
+    </div>
+  
+    <div id="impressum2" style="font-size: 16px">
+      <a routerLink="/impressum">Impressum</a>
+    </div>
+  </footer>
+</section>

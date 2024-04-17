@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent {
-
+  liveTest(url: string) {
+    window.open(url, '_blank');
+  }
 }

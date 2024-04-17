@@ -31,4 +31,10 @@ import { MenuOverlayComponent } from './menu-overlay/menu-overlay.component';
 })
 export class AppComponent {
   title = 'Portfolio';
+
+  isMenuOpen: boolean = false;
+
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 }

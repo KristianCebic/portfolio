@@ -1,21 +1,28 @@
 <div class="header">
-  <div (click)="scrollToContainer('myPicture')" id="name">
+  <div (click)="scrollToKristian()" id="name">
     Kristia<span class="last-letter">n</span>
   </div>
 
   <!-- MOBILE -->
   <div class="header_overlay">
     <img
-      (click)="openMenu()"
+      id="burgerMenu"
+      (click)="emitToggleMenu()"
       class="cursorPointer"
       style="height: 20px"
       src="../../assets/img/mySkills/burger menu.png"
       alt=""
     />
+
+    <img id="x" style="display: none" class="cursorPointer" (click)="emitToggleMenu()" src="../../assets/img/symbol/X.png" />
   </div>
 
   <!-- DESKTOP -->
   <div class="menu">
+    <div>
+      <img id="flag" class="flags" src="../../assets/img/flags/british.png" (click)="changeLanguage()">
+    </div>
+
     <div
       (click)="setActiveElementAboutMe('aboutMePurpleDiv')"
       [class.activeAboutMe]="activeAboutMe === 'aboutMePurpleDiv'"

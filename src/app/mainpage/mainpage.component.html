@@ -1,4 +1,5 @@
-<app-header></app-header>
+<app-header (toggleMenu)="toggleMenu()"></app-header>
+<app-menu-overlay (toggleMenu)="toggleMenu()" *ngIf="isVisible"></app-menu-overlay>
 <app-introduction></app-introduction>
 <app-about-me></app-about-me>
 <app-my-skills></app-my-skills>

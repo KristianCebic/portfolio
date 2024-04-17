@@ -1,23 +1,6 @@
-<section>
-  <div class="header">
-    <div id="name">Kristia<span class="last-letter">n</span></div>
-
-    <!-- MOBILE -->
-    <div class="header_overlay">
-      <img
-        style="height: 20px"
-        src="../../assets/img/mySkills/burger menu.png"
-        alt=""
-      />
-    </div>
-  </div>
-
-  <div id="overlay">
-    <div>
-      <div>About me</div>
-      <div>My skills</div>
-      <div>Portfolio</div>
-      <div>Contact</div>
-    </div>
-  </div>
-</section>
+<div class="menu-overlay">
+  <a (click)="setActiveElementAboutMe('aboutMe')">About me</a>
+  <a (click)="setActiveElementSkills('mySkillsSection')">My skills</a>
+  <a (click)="setActiveElementPortfolio('portfolio')">Portfolio</a>
+  <a (click)="setActiveElementContact('contact')">Contact</a>
+</div>

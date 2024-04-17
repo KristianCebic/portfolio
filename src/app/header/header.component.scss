@@ -2,6 +2,10 @@
   display: none;
 }
 
+.flags {
+  height: 18px;
+}
+
 @media screen and (min-width: 1024px) {
   .menu {
     display: flex;
@@ -53,5 +57,9 @@
     left: 0;
     width: 100vw;
     z-index: 1000; 
+}
+
+.x {
+  display: none;
 }
 

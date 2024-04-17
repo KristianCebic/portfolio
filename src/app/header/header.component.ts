@@ -1,9 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { AppComponent } from '../app.component';
+import { MenuOverlayComponent } from '../menu-overlay/menu-overlay.component';
+import { CommonModule } from '@angular/common';
+import { RouterLink, Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [
+    AppComponent,
+    MenuOverlayComponent,
+    CommonModule,
+    RouterLink,
+  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
@@ -13,25 +22,52 @@ export class HeaderComponent {
   activeSkills: string | null = null;
   activePortfolio: string | null = null;
 
+  constructor(private router: Router) {}
+
+  @Output() toggleMenu: EventEmitter<void> = new EventEmitter();
+
+  emitToggleMenu() {
+    const burgerMenu: HTMLElement = document.getElementById('burgerMenu') as HTMLElement;
+    const x: HTMLElement = document.getElementById('x') as HTMLElement;
+
+    this.toggleMenu.emit();
+    
+    if (x.style.display === 'none') {
+      burgerMenu.style.display = 'none';
+      x.style.display = 'flex';
+    } else {
+      burgerMenu.style.display = 'flex';
+      x.style.display = 'none';
+    }
+  }
+
   setActiveElementAboutMe(elementId: string) {
+    this.router.navigateByUrl('mainPage');
     this.activeAboutMe = elementId;
     this.activeSkills = null;
     this.activePortfolio = null;
-    this.scrollToContainer('aboutMe');
+    setTimeout(() => this.scrollToContainer('aboutMe'), 100);
   }
 
   setActiveElementSkills(elementId: string) {
+    this.router.navigateByUrl('mainPage');
     this.activeSkills = elementId;
     this.activeAboutMe = null;
     this.activePortfolio = null;
-    this.scrollToContainer('mySkillsSection');
+    setTimeout(() => this.scrollToContainer('mySkillsSection'), 100);
   }
 
   setActiveElementPortfolio(elementId: string) {
+    this.router.navigateByUrl('mainPage');
     this.activePortfolio = elementId;
     this.activeSkills = null;
     this.activeAboutMe = null;
-    this.scrollToContainer('portfolio');
+    setTimeout(() => this.scrollToContainer('portfolio'), 100);
+  }
+
+  scrollToKristian() {
+    this.router.navigateByUrl('mainPage');
+    setTimeout(() => this.scrollToContainer('firstSection'), 100);
   }
 
   scrollToContainer(elementId: string): void {
@@ -47,16 +83,14 @@ export class HeaderComponent {
       });
     }
   }
-  
-  openMenu() {
-    const firstSection: HTMLElement = document.getElementById('firstSection') as HTMLElement;
-    firstSection.innerHTML = `
-      <div id="menuOverlay">
-        <a href="/">About me</a>
-        <a href="/">My skills</a>
-        <a href="/">Portfolio</a>
-        <a href="/">Contact</a>
-      </div>
-    `;
+
+  changeLanguage() {
+    let flag: HTMLImageElement = document.getElementById('flag') as HTMLImageElement;
+
+    if (flag.src.includes('british.png')) {
+      flag.src = '../../assets/img/flags/german.png';
+    } else {
+      flag.src = '../../assets/img/flags/british.png';
+    }
   }
 }
