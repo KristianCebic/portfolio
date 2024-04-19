@@ -1,19 +1,25 @@
 <section>
   <app-header (toggleMenu)="toggleMenu()"></app-header>
-  <app-menu-overlay (toggleMenu)="toggleMenu()" *ngIf="isVisible"></app-menu-overlay>
+  <app-menu-overlay
+    (toggleMenu)="toggleMenu()"
+    *ngIf="isVisible"
+  ></app-menu-overlay>
 
-  <div class="impressum-container">
-    <h1>Impressum</h1>
-    <p>Angaben gemäß § 5 TMG:</p>
-    <h2>Webseitenbetreiber</h2>
+  <div class="impressum-container"> 
+    <h1 i18n>Legal Notice</h1>
+    <p i18n>Information according to § 5 TMG:</p>
+    <h2 i18n>Website Operator</h2>
     <p>Kristian Cebic</p>
-    <h2>Kontakt</h2>
-    <address>
-      Im Isengrind 9<br>
-      8046 Zürich<br>
-      Schweiz<br>
-      E-Mail: <a href="mailto:kristian.cebic13@gmail.com">kristian.cebic13&#64;gmail.com</a><br>
-      Telefon: <a href="tel:+410786903822">+41786903822</a>
+    <h2 i18n>Contact</h2>
+    <address i18n>
+      Im Isengrind 9<br />
+      8046 Zürich<br />
+      Switzerland<br />
+      E-Mail:
+      <a href="mailto:kristian.cebic13@gmail.com"
+        >kristian.cebic13&#64;gmail.com</a
+      ><br />
+      Phone: <a href="tel:+41786903822">+41786903822</a>
     </address>
   </div>
 
@@ -25,9 +31,9 @@
         <div class="blueLine"></div>
       </div>
     </div>
-  
+
     <div id="cebic">© Kristian Cebic 2024</div>
-  
+
     <div class="socialMediaFooter">
       <img
         class="socialMediaImg"
@@ -46,7 +52,7 @@
         alt=""
       />
     </div>
-  
+
     <div id="impressum2" style="font-size: 16px">
       <a routerLink="/impressum">Impressum</a>
     </div>

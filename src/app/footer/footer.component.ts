@@ -22,4 +22,8 @@ export class FooterComponent {
       });
     }
   }
+
+  liveTest(url: string) {
+    window.open(url, '_blank');
+  }
 }

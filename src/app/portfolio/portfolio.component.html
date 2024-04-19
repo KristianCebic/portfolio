@@ -6,11 +6,11 @@
   />
   <div id="header">
     <div id="purpleLine1"></div>
-    <h1>Portfolio</h1>
+    <h1 i18n>Portfolio</h1>
     <div class="purpleLine2"></div>
   </div>
 
-  <div id="selection" class="text">
+  <div id="selection" class="text" i18n>
     Explore a selection of my work here - Interact with projects to see my
     skills in action.
   </div>
@@ -25,7 +25,7 @@
     <div class="flexColumnCenter width">
       <h2 class="purple">Join</h2>
       <h3 class="green">Angular | Typescript | HTML | CSS | FIREBASE</h3>
-      <div class="text">
+      <div class="text" i18n>
         Task manager inspired by the Kanban System. Create and organize tasks
         using drag and drop functions, assign users and categories.
       </div>
@@ -46,12 +46,12 @@
     <div class="flexColumnCenter width flexEnd">
       <h2 class="purple">El Pollo Loco</h2>
       <h3 class="green">JavaScript | HTML | CSS</h3>
-      <div class="text">
+      <div class="text" i18n>
         A simple Jump-and-Run game based on an object-oriented approach. Help
         Pepe to find coins and bottles to fight against the endboss.
       </div>
       <div class="flexEvenly padding gap10 justifyFlexEnd">
-        <button id="liveTest" (click)="liveTest('https://kristian-cebic.developerakademie.net/Projekte/El%20Pollo%20Loco/index.html')">Live test</button>
+        <button id="liveTest" (click)="liveTest('https://kristian-cebic.developerakademie.net/Projekte/El%20Pollo%20Loco/index.html')" i18n>Live test</button>
         <button id="gitHub" (click)="liveTest('https://github.com/KristianCebic/el-pollo-loco.git')">Github</button>
       </div>
     </div>
@@ -66,34 +66,15 @@
     <div class="flexColumnCenter width">
       <h2 class="purple">Ring of fire</h2>
       <h3 class="green">Angular | Typescript | SCSS | FIREBASE</h3>
-      <div class="text">
+      <div class="text" i18n>
         Players take turns drawing a card from the deck. The card they draw
         corresponds to a specific rule they have to follow. The game ends when
         either the last king card is drawn and a player drinks the entire
         “King's Cup” or the last card is drawn.
       </div>
       <div class="flexEvenly padding gap10">
-        <button id="liveTest">Live test</button>
-        <button id="gitHub">Github</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- 4 PROJEKT -->
-  <div class="displayFlex rowReverse sidePadding">
-    <div class="projects width">
-      <img src="../../assets/img/pc_projekte/quizApp.png" alt="" />
-    </div>
-
-    <div class="flexColumnCenter width flexEnd">
-      <h2 class="purple">Quiz App</h2>
-      <h3 class="green">HTML | CSS</h3>
-      <div class="text">
-        A simple quiz app featuring computer science questions.
-      </div>
-      <div class="flexEvenly padding gap10 justifyFlexEnd">
-        <button id="liveTest">Live test</button>
-        <button id="gitHub">Github</button>
+        <button id="liveTest" (click)="liveTest('https://kristian-cebic.developerakademie.net/angular-projects/ringoffire/browser/index.html')" i18n>Live test</button>
+        <button id="gitHub" (click)="liveTest('https://github.com/KristianCebic/ringoffire.git')">Github</button>
       </div>
     </div>
   </div>

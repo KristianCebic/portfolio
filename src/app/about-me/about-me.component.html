@@ -6,7 +6,7 @@
       id="social_media1"
       class="socialMediaImg"
       src="../../assets/img/social_media1.png"
-      alt=""
+      (click)="liveTest('https://github.com/KristianCebic')"
     />
     <img
       (click)="scrollToContainer('contact')"
@@ -17,7 +17,7 @@
     <img
       class="socialMediaImg"
       src="../../assets/img/social_media3.png"
-      alt=""
+      (click)="liveTest('https://www.linkedin.com/in/kristian-cebic-8b1ab424b/')"
     />
     <div id="email" class="font_size14" (click)="scrollToContainer('contact')">kristian.cebic13&#64;gmail.com</div>
   </div>
@@ -28,14 +28,14 @@
 
 <div id="aboutMe">
   <div id="div2" class="text">
-    <h1>About me</h1>
+    <h1 i18n>About me</h1>
     <img
       class="backGroundShadow"
       src="../../assets/img/Purple shadow 2.png"
       alt=""
     />
     <div id="textAboutMe">
-      <div>
+      <div i18n>
         I am a fully trained chef from Switzerland with a rich background in the
         culinary arts. After extensive research to identify the next step in my
         learning journey, I discovered a profound interest in web development.
@@ -50,7 +50,7 @@
       </div>
       <div class="personalText">
         <img  src="../../assets/img/glühbirne.svg" />
-        <span
+        <span i18n
           >Disciplined and driven, I am a man who aspires to continuous
           improvement and constant learning. Embracing growth as my personal
           philosophy, I am ready to tackle any challenge that comes my way.</span
@@ -58,7 +58,7 @@
       </div>
       <div class="personalText">
         <img src="../../assets/img/puzzle.png" alt="" />
-        <span
+        <span i18n
           >With a strong foundation in teamwork and an adaptive mindset, I possess
           the ability to thrive in fast-paced environments. My experience in the
           culinary field, where precision and timing are crucial, has prepared me

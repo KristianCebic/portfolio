@@ -1,7 +1,7 @@
 <section id="contact">
   <div class="flexAlignCenter" style="gap: 6px">
     <div class="purpleLine"></div>
-    <h1>Contact</h1>
+    <h1 i18n>Contact</h1>
   </div>
 
   <img
@@ -12,25 +12,25 @@
 
   <div class="padding column flex paddingLeftAndRight">
     <div>
-      <h2>Got a problem to solve?</h2>
-      <div class="text">
+      <h2 i18n>Got a problem to solve?</h2>
+      <div class="text" i18n>
         Contact me through this form, I am interested in hearing from you, knowing
         your ideas and contributing to your projects with my work.
       </div>
-      <div class="text">Need a Frontend developer? <span>Contact me!</span></div>
+      <div class="text" i18n>Need a Frontend developer? <span>Contact me!</span></div>
     </div>
     
     <div class="form-container">
       <form (submit)="sendMessage($event)">
-        <input id="name" type="text" placeholder="Your name" required />
-        <input id="email" type="email" placeholder="Your email" required />
-        <textarea id="message" placeholder="Your message" required></textarea>
-        <div class="checkbox-container">
+        <input id="nameInput" type="text" placeholder="Your name" required />
+        <input id="emailInput" type="email" placeholder="Your email" required />
+        <textarea id="messageInput" placeholder="Your message" required></textarea>
+        <div class="checkbox-container" i18n>
           <input (click)="activateTheSendMessageButton()" type="checkbox" id="privacyPolicy1" required />
           <label for="privacyPolicy">I've read the <span id="privacyPolicy2">privacy policy</span> and agree to the processing of my data
             as outlined.</label>
         </div>
-        <div class="flex_center"><button id="sendMessage" class="sendMessageButton" type="submit">Send message :)</button></div>
+        <div class="flex_center"><button id="sendMessage" class="sendMessageButton" type="submit" i18n>Send message :)</button></div>
       </form>
       <div class="flexEnd">
         <div id="goUpButton" (click)="scrollToContainer('myPicture')">

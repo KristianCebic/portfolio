@@ -87,10 +87,20 @@ export class HeaderComponent {
   changeLanguage() {
     let flag: HTMLImageElement = document.getElementById('flag') as HTMLImageElement;
 
+    let name= document.getElementById('nameInput') as HTMLInputElement;
+    let email = document.getElementById('emailInput') as HTMLInputElement;
+    let message = document.getElementById('messageInput') as HTMLTextAreaElement;
+
     if (flag.src.includes('british.png')) {
       flag.src = '../../assets/img/flags/german.png';
+      name.placeholder = "Dein Name";
+      email.placeholder = "Deine E-Mail-Adresse";
+      message.placeholder = "Deine Nachricht";
     } else {
       flag.src = '../../assets/img/flags/british.png';
+      name.placeholder = "Your name";
+      email.placeholder = "Your email";
+      message.placeholder = "Your message";
     }
   }
 }

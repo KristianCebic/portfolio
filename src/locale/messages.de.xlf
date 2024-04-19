@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="3562199946446423606" datatype="html">
+        <source>About me</source>
+        <target>Über mich</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me/about-me.component.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/menu-overlay/menu-overlay.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7280931970285702365" datatype="html">
+        <source> I am a fully trained chef from Switzerland with a rich background in the culinary arts. After extensive research to identify the next step in my learning journey, I discovered a profound interest in web development. This led me to join the Developer Academy, where I uncovered a second passion. With a newfound dedication, I have decided to pursue a position as a web developer in Zurich. Throughout my culinary career, I have honed vital skills such as teamwork, problem-solving, and creativity, particularly under the high-pressure environment of a busy kitchen. These skills translate seamlessly into web development, where they contribute significantly to my ability to work collaboratively on technical solutions and innovative projects. </source>
+        <target>Ich bin ein voll ausgebildeter Koch aus der Schweiz mit einem reichen Hintergrund in den kulinarischen Künsten. Nach umfangreicher Forschung, um den nächsten Schritt in meiner Lernreise zu identifizieren, entdeckte ich ein tiefes Interesse an der Webentwicklung. Dies führte dazu, dass ich der Developer Academy beitrat, wo ich eine zweite Leidenschaft entdeckte. Mit neu gefundener Hingabe habe ich beschlossen, eine Position als Webentwickler in Zürich anzustreben. Während meiner kulinarischen Laufbahn habe ich wichtige Fähigkeiten wie Teamarbeit, Problemlösung und Kreativität verfeinert, insbesondere unter dem hohen Druck in einer beschäftigten Küche. Diese Fähigkeiten übertragen sich nahtlos in die Webentwicklung, wo sie bedeutend zu meiner Fähigkeit beitragen, kollaborativ an technischen Lösungen und innovativen Projekten zu arbeiten.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me/about-me.component.html</context>
+          <context context-type="linenumber">39,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2234825128194519822" datatype="html">
+        <source>Disciplined and driven, I am a man who aspires to continuous improvement and constant learning. Embracing growth as my personal philosophy, I am ready to tackle any challenge that comes my way.</source>
+        <target>Diszipliniert und motiviert, bin ich ein Mann, der nach stetiger Verbesserung und kontinuierlichem Lernen strebt. Wachstum als meine persönliche Philosophie annehmend, bin ich bereit, jede Herausforderung, die auf mich zukommt, zu meistern.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me/about-me.component.html</context>
+          <context context-type="linenumber">54,56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="633646873375549340" datatype="html">
+        <source>With a strong foundation in teamwork and an adaptive mindset, I possess the ability to thrive in fast-paced environments. My experience in the culinary field, where precision and timing are crucial, has prepared me to enter the world of web development with the same efficiency and attention to detail.</source>
+        <target>Mit einer soliden Grundlage in Teamarbeit und einer anpassungsfähigen Denkweise besitze ich die Fähigkeit, in schnelllebigen Umgebungen zu gedeihen. Meine Erfahrungen im kulinarischen Bereich, wo Präzision und Timing entscheidend sind, haben mich darauf vorbereitet, mit derselben Effizienz und Detailgenauigkeit in die Welt der Webentwicklung einzusteigen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me/about-me.component.html</context>
+          <context context-type="linenumber">62,65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7922989125096435449" datatype="html">
+        <source>Contact</source>
+        <target>Kontakt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/impressum/impressum.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/menu-overlay/menu-overlay.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7822866996489761530" datatype="html">
+        <source>Got a problem to solve?</source>
+        <target>Haben Sie ein Problem zu lösen?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3428733954044413516" datatype="html">
+        <source> Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work. </source>
+        <target>Kontaktieren Sie mich über dieses Formular, ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6717617091674783970" datatype="html">
+        <source>Need a Frontend developer? <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Contact me!<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target>Brauchen Sie einen Frontend-Entwickler? <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Kontaktieren Sie mich!<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3410413628722188272" datatype="html">
+        <source><x id="TAG_INPUT" ctype="x-input" equiv-text="&lt;input (click)=&quot;activateTheSendMessageButton()&quot; type=&quot;checkbox&quot; id=&quot;privacyPolicy1&quot; required /&gt;"/><x id="START_TAG_LABEL" ctype="x-label" equiv-text="&lt;label for=&quot;privacyPolicy&quot;&gt;"/>I&apos;ve read the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span id=&quot;privacyPolicy2&quot;&gt;"/>privacy policy<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> and agree to the processing of my data as outlined.<x id="CLOSE_TAG_LABEL" ctype="x-label" equiv-text="&lt;/label&gt;"/></source>
+        <target><x id="TAG_INPUT" ctype="x-input" equiv-text="&lt;input (click)=&quot;activateTheSendMessageButton()&quot; type=&quot;checkbox&quot; id=&quot;privacyPolicy1&quot; required /&gt;"/><x id="START_TAG_LABEL" ctype="x-label" equiv-text="&lt;label for=&quot;privacyPolicy&quot;&gt;"/>Ich habe die <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span id=&quot;privacyPolicy2&quot;&gt;"/>Datenschutzerklärung<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> gelesen und stimme der Verarbeitung meiner Daten wie dargelegt zu.<x id="CLOSE_TAG_LABEL" ctype="x-label" equiv-text="&lt;/label&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">29,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4373071676026959249" datatype="html">
+        <source>Send message :)</source>
+        <target>Nachricht senden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1368884853095124539" datatype="html">
+        <source>Legal Notice</source>
+        <target>Impressum</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/impressum/impressum.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3368965215521597111" datatype="html">
+        <source> About me <x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div id=&quot;aboutMePurpleDiv&quot; class=&quot;purpleLineMenu&quot;&gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/></source>
+        <target> Über mich <x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div id=&quot;aboutMePurpleDiv&quot; class=&quot;purpleLineMenu&quot;&gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">31,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="985479818335506738" datatype="html">
+        <source> Skills <x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div id=&quot;skillsPurpleDiv&quot; class=&quot;purpleLineMenu&quot;&gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/></source>
+        <target> Fähigkeiten <x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div id=&quot;skillsPurpleDiv&quot; class=&quot;purpleLineMenu&quot;&gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">40,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8731300323517237753" datatype="html">
+        <source> Portfolio <x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div id=&quot;portfolioPurpleDiv&quot; class=&quot;purpleLineMenu&quot;&gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">49,52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7199205039640591610" datatype="html">
+        <source>Information according to § 5 TMG:</source>
+        <target>Angaben gemäß § 5 TMG:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/impressum/impressum.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5047351918380865669" datatype="html">
+        <source>Website Operator</source>
+        <target>Webseitenbetreiber</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/impressum/impressum.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5923886610509260100" datatype="html">
+        <source> Im Isengrind 9<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> 8046 Zürich<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Switzerland<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> E-Mail: <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;mailto:kristian.cebic13@gmail.com&quot;
+        &gt;"/>kristian.cebic13@gmail.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Phone: <x id="START_LINK_1" equiv-text="&lt;a href=&quot;tel:+41786903822&quot;&gt;"/>+41786903822<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <target> Im Isengrind 9<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> 8046 Zürich<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Schweiz<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> E-Mail: <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;mailto:kristian.cebic13@gmail.com&quot;
+        &gt;"/>kristian.cebic13@gmail.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Telefon: <x id="START_LINK_1" equiv-text="&lt;a href=&quot;tel:+41786903822&quot;&gt;"/>+41786903822<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/impressum/impressum.component.html</context>
+          <context context-type="linenumber">15,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7337385171534704079" datatype="html">
+        <source>I am</source>
+        <target>Ich bin</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/introduction/introduction.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6001611158891228882" datatype="html">
+        <source>FRONTEND DEVELOPER</source>
+        <target>FRONTEND ENTWICKLER</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/introduction/introduction.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7801216715156743110" datatype="html">
+        <source>Let&apos;s talk!</source>
+        <target>Lass uns reden!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/introduction/introduction.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8561129210430791979" datatype="html">
+        <source>My skills</source>
+        <target>Meine Fähigkeiten</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/menu-overlay/menu-overlay.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/my-skills/my-skills.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9201103587777813545" datatype="html">
+        <source>Portfolio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/menu-overlay/menu-overlay.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5350420143493428636" datatype="html">
+        <source>I have gained experience in building projects with various front end technologies and concepts.</source>
+        <target>Ich habe Erfahrung darin gesammelt, Projekte mit verschiedenen Frontend-Technologien und Konzepten zu entwickeln.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/my-skills/my-skills.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2236877205125634440" datatype="html">
+        <source>Get in touch</source>
+        <target>Nehmen Sie Kontakt auf</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/my-skills/my-skills.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2548054720238033940" datatype="html">
+        <source> Explore a selection of my work here - Interact with projects to see my skills in action. </source>
+        <target>Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1113679641976952304" datatype="html">
+        <source> Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. </source>
+        <target>Aufgabenmanager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7137433390864392272" datatype="html">
+        <source> A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and bottles to fight against the endboss. </source>
+        <target>Ein einfaches Jump-and-Run-Spiel, basierend auf einem objektorientierten Ansatz. Hilf Pepe dabei, Münzen und Flaschen zu finden, um gegen den Endboss zu kämpfen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">50,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5686494406191647527" datatype="html">
+        <source>Live test</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">54,55</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">76,77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="865582671386353077" datatype="html">
+        <source> Players take turns drawing a card from the deck. The card they draw corresponds to a specific rule they have to follow. The game ends when either the last king card is drawn and a player drinks the entire “King&apos;s Cup” or the last card is drawn. </source>
+        <target>Die Spieler ziehen abwechselnd eine Karte aus dem Stapel. Die gezogene Karte entspricht einer spezifischen Regel, die sie befolgen müssen. Das Spiel endet, wenn entweder die letzte Königskarte gezogen wird und ein Spieler den gesamten „Königsbecher“ austrinkt oder die letzte Karte gezogen wird.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">70,73</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -4,9 +4,11 @@
   flex-direction: column;
   align-items: center;
   line-height: 5;
+  margin-top: 5%;
 }
 
 .vertical-text {
+  display: none;
   transform: rotate(-90deg);
   font-weight: 400;
   line-height: 77px;
@@ -17,14 +19,14 @@
 
 #name {
   font-weight: 700;
-  font-size: clamp(35px, 10vw, 90px);
+  font-size: clamp(35px, 10vw, 70px);
 }
 
 #special-text {
   font-family: Poppins;
   font-weight: 400;
   color: #9747ff;
-  font-size: clamp(22px, 5vw, 60px);
+  font-size: clamp(22px, 5vw, 30px);
 }
 
 .introduction {
@@ -38,13 +40,11 @@
   justify-content: center;
   flex-direction: column;
   line-height: 1.2;
+  text-align: center;
 }
 
 #letsTalkDiv {
-  img {
-    width: clamp(100px, 12vw, 15vw);
-    cursor: pointer;
-  }
+  width: 124px;
 }
 
 #myPicture {
@@ -93,6 +93,14 @@
 
 
 @media screen and (min-width: 1024px) {
+  #second-container {
+    text-align: left;
+  }
+
+  .vertical-text {
+    display: flex;
+  }
+
   .background {
     width: 150vw;
   }
@@ -120,11 +128,12 @@
   }
 
   #special-text {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .vertical-text {
-    font-size: 50px;
+    font-size: 30px;
+    height: 40px;
   }
 }
 
