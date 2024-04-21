@@ -24,3 +24,12 @@
     }
   }
 }
+
+#flagInHeader {
+  height: 28px;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

@@ -1,13 +1,21 @@
 import { Component } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-introduction',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './introduction.component.html',
   styleUrl: './introduction.component.scss'
 })
 export class IntroductionComponent {
+
+  constructor(private translate: TranslateService) {}
+
+  switchLanguage(language: string): void {
+    this.translate.use(language);
+  }
+
   scrollToContainer(elementId: string): void {
     const element = document.getElementById(elementId);
     if (element) {
