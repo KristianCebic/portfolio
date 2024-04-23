@@ -3,6 +3,7 @@ import { AppComponent } from '../app.component';
 import { MenuOverlayComponent } from '../menu-overlay/menu-overlay.component';
 import { CommonModule } from '@angular/common';
 import { RouterLink, Router } from '@angular/router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -12,6 +13,7 @@ import { RouterLink, Router } from '@angular/router';
     MenuOverlayComponent,
     CommonModule,
     RouterLink,
+    TranslateModule,
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
@@ -22,7 +24,7 @@ export class HeaderComponent {
   activeSkills: string | null = null;
   activePortfolio: string | null = null;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private translate: TranslateService) {}
 
   @Output() toggleMenu: EventEmitter<void> = new EventEmitter();
 
@@ -91,16 +93,18 @@ export class HeaderComponent {
     let email = document.getElementById('emailInput') as HTMLInputElement;
     let message = document.getElementById('messageInput') as HTMLTextAreaElement;
 
-    if (flag.src.includes('british.png')) {
-      flag.src = '../../assets/img/flags/german.png';
+    if (flag.src.includes('german.png')) {
+      flag.src = '../../assets/img/flags/british.png';
       name.placeholder = "Dein Name";
       email.placeholder = "Deine E-Mail-Adresse";
       message.placeholder = "Deine Nachricht";
+      this.translate.use('de');
     } else {
-      flag.src = '../../assets/img/flags/british.png';
+      flag.src = '../../assets/img/flags/german.png';
       name.placeholder = "Your name";
       email.placeholder = "Your email";
       message.placeholder = "Your message";
+      this.translate.use('en');
     }
   }
 }

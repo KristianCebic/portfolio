@@ -15,13 +15,13 @@
 
   <div id="introduction">
     <div class="introduction">
-      <div class="vertical-text" (click)="switchLanguage('de')">{{ 'I am' | translate }}</div>
+      <div class="vertical-text" (click)="switchLanguage('de')">{{'I am' | translate}}</div>
       <div id="second-container">
         <div id="name">Kristian Cebic</div>
-        <div id="special-text" i18n>FRONTEND DEVELOPER</div>
+        <div id="special-text">{{'FRONTEND DEVELOPER' | translate}}</div>
       </div>
     </div>
 
-    <div id="letsTalkDiv" class="button" (click)="scrollToContainer('contact')" i18n>Let's talk!</div>
+    <div id="letsTalkDiv" class="button" (click)="scrollToContainer('contact')">{{ 'talk!' | translate }}</div>
   </div>
 </section>

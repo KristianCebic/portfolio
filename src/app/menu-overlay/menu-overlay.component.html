@@ -1,8 +1,8 @@
 <div class="menu-overlay">
-  <a (click)="setActiveElementAboutMe('aboutMe')" i18n>About me</a>
-  <a (click)="setActiveElementSkills('mySkillsSection')" i18n>My skills</a>
-  <a (click)="setActiveElementPortfolio('portfolio')" i18n>Portfolio</a>
-  <a (click)="setActiveElementContact('contact')" i18n>Contact</a>
+  <a (click)="setActiveElementAboutMe('aboutMe')">{{'About me' | translate}}</a>
+  <a (click)="setActiveElementSkills('mySkillsSection')">{{'Skills' | translate}}</a>
+  <a (click)="setActiveElementPortfolio('portfolio')">Portfolio</a>
+  <a (click)="setActiveElementContact('contact')">{{'Contact' | translate}}</a>
   <div>
     <img id="flagInHeader" class="flags" src="../../assets/img/flags/british.png" (click)="changeLanguage()">
   </div>

@@ -1,10 +1,11 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { RouterLink, Router } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-menu-overlay',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './menu-overlay.component.html',
   styleUrl: './menu-overlay.component.scss'
 })

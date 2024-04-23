@@ -6,13 +6,12 @@
   />
   <div id="header">
     <div id="purpleLine1"></div>
-    <h1 i18n>Portfolio</h1>
+    <h1>Portfolio</h1>
     <div class="purpleLine2"></div>
   </div>
 
-  <div id="selection" class="text" i18n>
-    Explore a selection of my work here - Interact with projects to see my
-    skills in action.
+  <div id="selection" class="text">
+    {{ "Explore a selection of my work here - Interact with projects to see my skills in action." | translate }}
   </div>
 
   <!-- 1 PROJEKT -->
@@ -25,9 +24,8 @@
     <div class="flexColumnCenter width">
       <h2 class="purple">Join</h2>
       <h3 class="green">Angular | Typescript | HTML | CSS | FIREBASE</h3>
-      <div class="text" i18n>
-        Task manager inspired by the Kanban System. Create and organize tasks
-        using drag and drop functions, assign users and categories.
+      <div class="text">
+        {{ "join" | translate }}
       </div>
       <div class="flexEvenly padding gap10">
         <button id="liveTest" (click)="liveTest('https://kristian-cebic.developerakademie.net/Projekte/Group%20Projects/JOIN/JOIN_dummy/join-656/html/index.html')">Live test</button>
@@ -46,12 +44,11 @@
     <div class="flexColumnCenter width flexEnd">
       <h2 class="purple">El Pollo Loco</h2>
       <h3 class="green">JavaScript | HTML | CSS</h3>
-      <div class="text" i18n>
-        A simple Jump-and-Run game based on an object-oriented approach. Help
-        Pepe to find coins and bottles to fight against the endboss.
+      <div class="text">
+        {{"elPoloLoco" | translate}}
       </div>
       <div class="flexEvenly padding gap10 justifyFlexEnd">
-        <button id="liveTest" (click)="liveTest('https://kristian-cebic.developerakademie.net/Projekte/El%20Pollo%20Loco/index.html')" i18n>Live test</button>
+        <button id="liveTest" (click)="liveTest('https://kristian-cebic.developerakademie.net/Projekte/El%20Pollo%20Loco/index.html')">Live test</button>
         <button id="gitHub" (click)="liveTest('https://github.com/KristianCebic/el-pollo-loco.git')">Github</button>
       </div>
     </div>
@@ -66,14 +63,11 @@
     <div class="flexColumnCenter width">
       <h2 class="purple">Ring of fire</h2>
       <h3 class="green">Angular | Typescript | SCSS | FIREBASE</h3>
-      <div class="text" i18n>
-        Players take turns drawing a card from the deck. The card they draw
-        corresponds to a specific rule they have to follow. The game ends when
-        either the last king card is drawn and a player drinks the entire
-        “King's Cup” or the last card is drawn.
+      <div class="text">
+        {{"ringOfFire" | translate}}
       </div>
       <div class="flexEvenly padding gap10">
-        <button id="liveTest" (click)="liveTest('https://kristian-cebic.developerakademie.net/angular-projects/ringoffire/browser/index.html')" i18n>Live test</button>
+        <button id="liveTest" (click)="liveTest('https://kristian-cebic.developerakademie.net/angular-projects/ringoffire/browser/index.html')">Live test</button>
         <button id="gitHub" (click)="liveTest('https://github.com/KristianCebic/ringoffire.git')">Github</button>
       </div>
     </div>

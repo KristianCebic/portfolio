@@ -20,7 +20,7 @@
   <!-- DESKTOP -->
   <div class="menu">
     <div>
-      <img id="flag" class="flags" src="../../assets/img/flags/british.png" (click)="changeLanguage()">
+      <img id="flag" class="flags" src="../../assets/img/flags/german.png" (click)="changeLanguage()">
     </div>
 
     <div
@@ -28,7 +28,7 @@
       [class.activeAboutMe]="activeAboutMe === 'aboutMePurpleDiv'"
       i18n
     >
-      About me
+      {{'About me' | translate}}
       <div id="aboutMePurpleDiv" class="purpleLineMenu"></div>
     </div>
 
@@ -37,7 +37,7 @@
       [class.activeSkills]="activeSkills === 'skillsPurpleDiv'"
       i18n
     >
-      Skills
+      {{'Skills' | translate}}
       <div id="skillsPurpleDiv" class="purpleLineMenu"></div>
     </div>
 

@@ -10,6 +10,7 @@ import { MenuOverlayComponent } from '../menu-overlay/menu-overlay.component';
 import { AppComponent } from '../app.component';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -28,6 +29,7 @@ import { CommonModule } from '@angular/common';
     AppComponent,
     RouterOutlet,
     CommonModule,
+    TranslateModule
   ],
   templateUrl: './mainpage.component.html',
   styleUrl: './mainpage.component.scss'
