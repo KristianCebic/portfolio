@@ -4,6 +4,6 @@
   <a (click)="setActiveElementPortfolio('portfolio')">Portfolio</a>
   <a (click)="setActiveElementContact('contact')">{{'Contact' | translate}}</a>
   <div>
-    <img id="flagInHeader" class="flags" src="../../assets/img/flags/british.png" (click)="changeLanguage()">
+    <img id="flagInHeader" class="flags" [src]="'assets/img/flags/' + variableService.currentFlag" (click)="changeLanguage()">
   </div>
 </div>

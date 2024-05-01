@@ -28,5 +28,8 @@
   "ringOfFire": "Die Spieler ziehen abwechselnd eine Karte aus dem Deck. Die gezogene Karte entspricht einer bestimmten Regel, die sie befolgen müssen. Das Spiel endet, wenn entweder die letzte Königskarte gezogen wird und ein Spieler den gesamten 'King's Cup' trinkt oder die letzte Karte gezogen wird.",
   "Your name": "Dein Name",
   "Your email": "Deine E-mail-Adresse",
-  "Your message": "Deine Nachricht"
+  "Your message": "Deine Nachricht",
+  "Scroll down": "Scrollen Sie nach unten",
+  "Information according to": "Information gemäss"
+
 }

@@ -28,5 +28,6 @@
   "ringOfFire": "Players take turns drawing a card from the deck. The card they draw corresponds to a specific rule they have to follow. The game ends when either the last king card is drawn and a player drinks the entire “King's Cup” or the last card is drawn.",
   "Your name": "Your name",
   "Your email": "Your email",
-  "Your message": "Your message"
+  "Your message": "Your message",
+  "Scroll down": "Scroll down"
 }

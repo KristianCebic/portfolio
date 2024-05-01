@@ -9,6 +9,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuOverlayComponent } from './menu-overlay/menu-overlay.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @Component({
@@ -25,6 +26,7 @@ import { MenuOverlayComponent } from './menu-overlay/menu-overlay.component';
     FooterComponent,
     MenuOverlayComponent,
     RouterModule,
+    TranslateModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

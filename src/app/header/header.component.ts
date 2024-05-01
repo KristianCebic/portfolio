@@ -95,15 +95,19 @@ export class HeaderComponent {
 
     if (flag.src.includes('german.png')) {
       flag.src = '../../assets/img/flags/british.png';
-      name.placeholder = "Dein Name";
-      email.placeholder = "Deine E-Mail-Adresse";
-      message.placeholder = "Deine Nachricht";
+      if (name && email && message) {
+        name.placeholder = "Dein Name";
+        email.placeholder = "Deine E-Mail-Adresse";
+        message.placeholder = "Deine Nachricht";
+      }
       this.translate.use('de');
     } else {
       flag.src = '../../assets/img/flags/german.png';
-      name.placeholder = "Your name";
-      email.placeholder = "Your email";
-      message.placeholder = "Your message";
+      if (name && email && message) {
+        name.placeholder = "Your name";
+        email.placeholder = "Your email";
+        message.placeholder = "Your message";
+      }
       this.translate.use('en');
     }
   }

@@ -1,13 +1,14 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { RouterLink, Router } from '@angular/router';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { VariableServiceService } from '../variable-service.service';
 
 @Component({
   selector: 'app-menu-overlay',
   standalone: true,
   imports: [TranslateModule],
   templateUrl: './menu-overlay.component.html',
-  styleUrl: './menu-overlay.component.scss'
+  styleUrl: './menu-overlay.component.scss',
 })
 
 export class MenuOverlayComponent {
@@ -18,7 +19,7 @@ export class MenuOverlayComponent {
 
   @Output() toggleMenu: EventEmitter<void> = new EventEmitter();
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private translate: TranslateService, public variableService: VariableServiceService) {}
 
   emitToggleMenu() {
     const burgerMenu: HTMLElement = document.getElementById('burgerMenu') as HTMLElement;
@@ -95,20 +96,26 @@ export class MenuOverlayComponent {
   changeLanguage() {
     let flag: HTMLImageElement = document.getElementById('flagInHeader') as HTMLImageElement;
 
-    let name= document.getElementById('nameInput') as HTMLInputElement;
+    let name = document.getElementById('nameInput') as HTMLInputElement;
     let email = document.getElementById('emailInput') as HTMLInputElement;
     let message = document.getElementById('messageInput') as HTMLTextAreaElement;
 
-    if (flag.src.includes('british.png')) {
-      flag.src = '../../assets/img/flags/german.png';
-      name.placeholder = "Dein Name";
-      email.placeholder = "Deine E-Mail-Adresse";
-      message.placeholder = "Deine Nachricht";
+    if (this.variableService.currentFlag === 'german.png') {
+      this.variableService.currentFlag = 'british.png';
+      if (name && email && message) {
+        name.placeholder = "Dein Name";
+        email.placeholder = "Deine E-Mail-Adresse";
+        message.placeholder = "Deine Nachricht";
+      }
+      this.translate.use('de');
     } else {
-      flag.src = '../../assets/img/flags/british.png';
-      name.placeholder = "Your name";
-      email.placeholder = "Your email";
-      message.placeholder = "Your message";
+      this.variableService.currentFlag = 'german.png';
+      if (name && email && message) {
+        name.placeholder = "Your name";
+        email.placeholder = "Your email";
+        message.placeholder = "Your message";
+      }
+      this.translate.use('en');
     }
   }
 }

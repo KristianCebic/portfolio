@@ -11,7 +11,6 @@ body {
   background-color: #141d2f;
   font-size: 14px;
   overflow-x: hidden;
-  max-width: 1920px;
 }
 
 input {
@@ -49,7 +48,7 @@ a {
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 42px;
 }
 
 #menuOverlay {
@@ -171,6 +170,10 @@ button {
 
 .last-letter {
   color: #70e61c;
+}
+
+.padding10 {
+  padding: 10px;
 }
 
 .header_overlay {

@@ -1,3 +1,7 @@
+section {
+  position: relative;
+}
+
 #introduction {
   font-size: clamp(16px, 3vw, 4vw);
   display: flex;
@@ -15,6 +19,19 @@
   letter-spacing: 0em;
   text-align: left;
   font-size: clamp(20px, 5vw, 70px);
+}
+
+.scrollDown {
+  display: none;
+  transform: rotate(90deg);
+  font-weight: 200;
+  line-height: 77px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-size: 23px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 #name {
@@ -54,7 +71,7 @@
   position: relative;
 
   #photo_shadows {
-    height: 600px;
+    height: 540px;
     position: absolute;
     z-index: -999;
     width: clamp(500px, 90vw, 800px);
@@ -70,6 +87,8 @@
 .background {
   width: 100%;
   top: 330px;
+  z-index: -800; 
+  position: absolute;
 }
 
 @media screen and (min-width: 620px) {
@@ -90,9 +109,11 @@
   }
 }
 
-
-
 @media screen and (min-width: 1024px) {
+  .scrollDown {
+    display: flex;
+  }
+
   #second-container {
     text-align: left;
   }
@@ -101,18 +122,10 @@
     display: flex;
   }
 
-  .background {
-    width: 150vw;
-  }
-
   section {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  #photo_shadows {
-    height: 560px;
   }
 
   #myPictureIMG {
@@ -139,17 +152,5 @@
 @media screen and (min-width: 1210px) {
   .background {
     top: 400px;
-  }
-}
-
-@media screen and (min-width: 1728px) {
-  .background {
-    top: 300px;
-  }
-}
-
-@media screen and (min-width: 1728px) {
-  .background {
-    top: 200px;
   }
 }
