@@ -232,3 +232,9 @@ section {
 #footer {
   line-height: 45px;
 }
+
+@media screen and (min-width: 1024px) {
+  .lineHeight {
+    height: 100px;
+  }
+}

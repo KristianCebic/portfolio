@@ -4,6 +4,7 @@ import { MenuOverlayComponent } from '../menu-overlay/menu-overlay.component';
 import { FooterComponent } from '../footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
+import { RouterLink, Router } from '@angular/router';
 
 @Component({
   selector: 'app-impressum',
@@ -15,10 +16,13 @@ import { TranslateModule } from '@ngx-translate/core';
     FooterComponent,
     MenuOverlayComponent,
     CommonModule,
-    TranslateModule
+    TranslateModule,
+    RouterLink,
   ],
 })
 export class ImpressumComponent {
+  constructor(private router: Router) {}
+
   isVisible: boolean = false;
 
   toggleMenu(): void {
@@ -26,6 +30,14 @@ export class ImpressumComponent {
   }
 
   scrollToContainer(elementId: string): void {
+    this.router.navigate(['/mainPage']);
+
+    setTimeout(() => {
+      this.navigateToContactContainer(elementId);
+    }, 100);
+  }
+
+  navigateToContactContainer(elementId: string) {
     const element = document.getElementById(elementId);
     if (element) {
       const headerOffset = document.querySelector('.header')?.clientHeight ?? 0;
@@ -38,5 +50,9 @@ export class ImpressumComponent {
         behavior: 'smooth',
       });
     }
+  }
+
+  liveTest(url: string) {
+    window.open(url, '_blank');
   }
 }

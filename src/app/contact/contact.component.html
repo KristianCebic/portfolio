@@ -23,14 +23,36 @@
     </div>
 
     <div class="form-container">
-      <form (submit)="sendMessage($event)">
-        <input id="nameInput" type="text" placeholder="{{'Your name' | translate }}" required />
-        <input id="emailInput" type="email" placeholder="{{'Your email' | translate}}" required />
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <input
+          [(ngModel)]="contactData.name"
+          name="name"
+          id="nameInput"
+          type="text"
+          placeholder="{{ 'Your name' | translate }}"
+          required
+        />
+        <input
+          [(ngModel)]="contactData.email"
+          name="email"
+          id="emailInput"
+          type="email"
+          placeholder="{{ 'Your email' | translate }}"
+          required
+        />
         <textarea
+          #message="ngModel"
+          [(ngModel)]="contactData.message"
+          name="message"
           id="messageInput"
-          placeholder="{{'Your message' | translate}}"
+          placeholder="{{ 'Your message' | translate }}"
           required
         ></textarea>
+
+        @if (!message.valid && message.touched && !message.disabled) {
+          <span>Please enter a message</span>
+        }
+
         <div class="checkbox-container">
           <input
             (click)="activateTheSendMessageButton()"
@@ -48,7 +70,7 @@
         </div>
         <div class="flex_center">
           <button id="sendMessage" class="sendMessageButton" type="submit">
-            {{'Send message' | translate}}
+            {{ "Send message" | translate }}
           </button>
         </div>
       </form>
@@ -60,9 +82,5 @@
     </div>
   </div>
 
-  <img
-    class="purpleShadow"
-    src="assets/img/shadows/purpleShadow.png"
-    alt=""
-  />
+  <img class="purpleShadow" src="assets/img/shadows/purpleShadow.png" alt="" />
 </section>

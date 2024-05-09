@@ -36,21 +36,22 @@
 
     <div class="socialMediaFooter">
       <img
-        class="socialMediaImg"
-        src="assets/img/social_media1.png"
-        alt=""
-      />
-      <img
-        (click)="scrollToContainer('contact')"
-        class="socialMediaImg"
-        src="assets/img/social_media2.png"
-        alt=""
-      />
-      <img
-        class="socialMediaImg"
-        src="assets/img/social_media3.png"
-        alt=""
-      />
+      class="socialMediaImg"
+      src="assets/img/social_media1.png"
+      (click)="liveTest('https://github.com/KristianCebic')"
+    />
+    <img
+      routerLink="/mainPage"
+      (click)="scrollToContainer('contact')"
+      class="socialMediaImg"
+      src="assets/img/social_media2.png"
+      alt=""
+    />
+    <img
+      class="socialMediaImg"
+      src="assets/img/social_media3.png"
+      (click)="liveTest('https://www.linkedin.com/in/kristian-cebic-8b1ab424b/')"
+    />
     </div>
 
     <div id="impressum2" style="font-size: 16px">

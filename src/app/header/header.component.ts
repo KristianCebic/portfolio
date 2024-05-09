@@ -4,6 +4,7 @@ import { MenuOverlayComponent } from '../menu-overlay/menu-overlay.component';
 import { CommonModule } from '@angular/common';
 import { RouterLink, Router } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { VariableServiceService } from '../variable-service.service';
 
 @Component({
   selector: 'app-header',
@@ -24,7 +25,7 @@ export class HeaderComponent {
   activeSkills: string | null = null;
   activePortfolio: string | null = null;
 
-  constructor(private router: Router, private translate: TranslateService) {}
+  constructor(private router: Router, private translate: TranslateService, public variableService: VariableServiceService) {}
 
   @Output() toggleMenu: EventEmitter<void> = new EventEmitter();
 
@@ -94,7 +95,7 @@ export class HeaderComponent {
     let message = document.getElementById('messageInput') as HTMLTextAreaElement;
 
     if (flag.src.includes('german.png')) {
-      flag.src = '../../assets/img/flags/british.png';
+      this.variableService.currentFlag = 'british.png';
       if (name && email && message) {
         name.placeholder = "Dein Name";
         email.placeholder = "Deine E-Mail-Adresse";
@@ -102,7 +103,7 @@ export class HeaderComponent {
       }
       this.translate.use('de');
     } else {
-      flag.src = '../../assets/img/flags/german.png';
+      this.variableService.currentFlag = 'german.png';
       if (name && email && message) {
         name.placeholder = "Your name";
         email.placeholder = "Your email";

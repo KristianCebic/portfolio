@@ -20,7 +20,7 @@
   <!-- DESKTOP -->
   <div class="menu">
     <div>
-      <img id="flag" class="flags" src="assets/img/flags/german.png" (click)="changeLanguage()">
+      <img id="flag" class="flags" [src]="'assets/img/flags/' + variableService.currentFlag" (click)="changeLanguage()">
     </div>
 
     <div
