@@ -32,6 +32,10 @@ section {
   position: relative;
 }
 
+.displayNone {
+  display: none;
+}
+
 #purpleLine1 {
   background-color: rgb(151, 71, 255);
   width: 20px;
@@ -90,6 +94,14 @@ section {
 
 #purpleShadow3 {
   display: none;
+}
+
+.animationSlideInRight {
+  animation: fade-in-right-side 1s;
+}
+
+.animationSlideInLeft {
+  animation: fade-in-left-side 1s;
 }
 
 @media screen and (min-width: 1024px) {

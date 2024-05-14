@@ -13,9 +13,9 @@
   "contactMe": "Kontaktieren Sie mich über dieses Formular, ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
   "Need a Frontend developer?": "Brauchen Sie einen Frontend-Entwickler?",
   "Contact me!": "Kontaktieren Sie mich!",
-  "I have read the": "Ich habe die Datenschutzrichtlinie",
-  "privacy policy": "gelesen",
-  "and agree to the processing of my data as outlined.": "und stimme der Verarbeitung meiner Daten wie dargelegt zu.",
+  "I have read the": "Ich habe die ",
+  "privacy policy": "Datenschutzrichtlinie",
+  "and agree to the processing of my data as outlined.": "gelesen und stimme der Verarbeitung meiner Daten wie dargelegt zu.",
   "I have gained experience in building projects with various front end technologies and concepts.": "Ich habe Erfahrung in der Entwicklung von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.",
   "Website Operator": "Betreiber der Website",
   "Switzerland": "Schweiz",
@@ -30,6 +30,6 @@
   "Your email": "Deine E-mail-Adresse",
   "Your message": "Deine Nachricht",
   "Scroll down": "Scrollen Sie nach unten",
-  "Information according to": "Information gemäss"
-
+  "Information according to": "Information gemäss",
+  "Impressum": "Imprint"
 }

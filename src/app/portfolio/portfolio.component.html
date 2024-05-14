@@ -1,4 +1,4 @@
-<section id="portfolio">
+<section id="portfolio" #portfolio>
   <img
     style="position: absolute; z-index: -10; top: -190px"
     src="assets/img/shadows/GReen shadow.png"
@@ -15,8 +15,7 @@
   </div>
 
   <!-- 1 PROJEKT -->
-  <div class="displayFlex sidePadding">
-
+  <div #project id="projekt1" class="sidePadding displayNone">
     <div class="projects width">
       <img src="assets/img/pc_projekte/join.png" alt="" />
     </div>
@@ -32,11 +31,10 @@
         <button id="gitHub" (click)="liveTest('https://github.com/KristianCebic/join.git')">Github</button>
       </div>
     </div>
-
   </div>
 
   <!-- 2 PROJEKT -->
-  <div class="displayFlex rowReverse sidePadding">
+  <div #project class="rowReverse sidePadding displayNone">
     <div class="projects width">
       <img src="assets/img/pc_projekte/elPoloLoco.png" alt="" />
     </div>
@@ -55,7 +53,7 @@
   </div>
 
   <!-- 3 PROJEKT -->
-  <div class="displayFlex sidePadding">
+  <div #project class="sidePadding displayNone">
     <div class="projects width">
       <img src="assets/img/pc_projekte/ringoffire.png" alt="" />
     </div>

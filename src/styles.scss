@@ -238,3 +238,27 @@ section {
     height: 100px;
   }
 }
+
+@keyframes fade-in-right-side {
+  0% {
+    opacity: 0;
+    transform: translatex(-100%) scale(0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translatex(0px) scale(1);
+  }
+}
+
+@keyframes fade-in-left-side {
+  0% {
+    opacity: 0;
+    transform: translatex(+100%) scale(0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translatex(0px) scale(1);
+  }
+}
