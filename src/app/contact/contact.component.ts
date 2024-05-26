@@ -1,12 +1,14 @@
+import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [TranslateModule, FormsModule],
+  imports: [TranslateModule, FormsModule, CommonModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
@@ -14,14 +16,15 @@ export class ContactComponent {
   http = inject(HttpClient);
 
   contactData = {
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   };
 
   canSendMessage: boolean;
+  checkbox: any = false;
 
-  constructor() {
+  constructor(private router: Router) {
     this.canSendMessage = false;
   }
 
@@ -53,9 +56,10 @@ export class ContactComponent {
     const checkbox: HTMLInputElement = document.getElementById(
       'privacyPolicy1'
     ) as HTMLInputElement;
-    const sendMessageButton: HTMLButtonElement = document.getElementById(
-      'sendMessage'
-    ) as HTMLButtonElement;
+    
+      const sendMessageButton: HTMLButtonElement = document.getElementById(
+        'sendMessage'
+      ) as HTMLButtonElement;
 
     this.canSendMessage =
       nameText.value !== '' &&
@@ -81,11 +85,11 @@ export class ContactComponent {
   mailTest = false;
 
   post = {
-    endPoint: 'https://kristian-cebic.ch/sendMail.php',
+    endPoint: 'https://www.kristian-cebic.ch/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
-        'Content-Type': 'text/plain',
+        'Content-Type': 'application/json',
         responseType: 'text',
       },
     },
@@ -93,10 +97,10 @@ export class ContactComponent {
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+      this.http
+        .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
             ngForm.resetForm();
           },
           error: (error) => {
@@ -107,5 +111,9 @@ export class ContactComponent {
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       ngForm.resetForm();
     }
+  }
+
+  privacypolicy() {
+    this.router.navigate(['/privacypolicy']);
   }
 }

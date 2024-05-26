@@ -174,3 +174,14 @@ textarea {
     flex-direction: row;
   }
 }
+
+.warnings {
+  color: red;
+  font-size: 1rem;
+}
+
+#privacyPolicy2 {
+  &:hover {
+    text-decoration: underline;
+  }
+}

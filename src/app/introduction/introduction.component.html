@@ -1,34 +1,61 @@
-<section id="firstSection">
-  <img
-    class="background"
-    src="assets/img/background_2.png"
-  />
-
-  <div id="myPicture">
-    <img id="photo_shadows" src="assets/img/photo shadows.png" />
-    <img
-      id="myPictureIMG"
-      src="assets/img/Bewerbungsfoto.png"
-    />
-  </div>
-
-  <div id="introduction">
-    <div class="introduction">
-      <div class="vertical-text">
-        {{ "I am" | translate }}
+<div class="mainContainer">
+  <section id="firstSection">
+    <img class="background" src="assets/img/background_2.png" />
+  
+    <div id="myPicture">
+      <img id="photo_shadows" src="assets/img/photo shadows.png" />
+      <img id="myPictureIMG" src="assets/img/Bewerbungsfoto.png" />
+    </div>
+  
+    <div id="introduction">
+      <div class="introduction">
+        <div class="vertical-text">
+          {{ "I am" | translate }}
+        </div>
+        <div id="second-container">
+          <div id="name">Kristian Cebic</div>
+          <div id="special-text">{{ "FRONTEND DEVELOPER" | translate }}</div>
+        </div>
       </div>
-      <div id="second-container">
-        <div id="name">Kristian Cebic</div>
-        <div id="special-text">{{ "FRONTEND DEVELOPER" | translate }}</div>
+  
+      <div id="letsTalkDiv" class="button" (click)="scrollToContainer('contact')">
+        {{ "talk!" | translate }}
       </div>
     </div>
-
-    <div id="letsTalkDiv" class="button" (click)="scrollToContainer('contact')">
-      {{ "talk!" | translate }}
+  
+    <div class="scrollDown">{{ "Scroll down" | translate }} -></div>
+  </section>
+  
+  <div id="div1">
+    <div class="purpleLine2"></div>
+  
+    <div id="socialMedia">
+      <img
+        id="social_media1"
+        class="socialMediaImg"
+        src="assets/img/social_media1.png"
+        (click)="liveTest('https://github.com/KristianCebic')"
+      />
+      <img
+        (click)="scrollToContainer('contact')"
+        class="socialMediaImg"
+        src="assets/img/social_media2.png"
+        alt=""
+      />
+      <img
+        class="socialMediaImg"
+        src="assets/img/social_media3.png"
+        (click)="
+          liveTest('https://www.linkedin.com/in/kristian-cebic-8b1ab424b/')
+        "
+      />
+      <div
+        id="email"
+        class="font_size14"
+        (click)="scrollToContainer('contact')"
+      >
+        kristian.cebic13&#64;gmail.com
+      </div>
     </div>
   </div>
-
-  <div class="scrollDown">
-    {{'Scroll down' | translate}} ->
-  </div>
-</section>
+</div>

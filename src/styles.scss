@@ -142,12 +142,6 @@ button {
   color: #ffffff;
   font-size: clamp(13px, 2vw, 3vw);
 
-  #name {
-    padding-left: 5%;
-    font-weight: bold;
-    font-size: 20px;
-  }
-
   .flags {
     height: 18px;
   }
@@ -174,13 +168,6 @@ button {
 
 .padding10 {
   padding: 10px;
-}
-
-.header_overlay {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 10%;
 }
 
 .gap10 {

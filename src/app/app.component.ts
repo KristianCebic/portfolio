@@ -11,7 +11,6 @@ import { FooterComponent } from './footer/footer.component';
 import { MenuOverlayComponent } from './menu-overlay/menu-overlay.component';
 import { TranslateModule } from '@ngx-translate/core';
 
-
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -26,7 +25,7 @@ import { TranslateModule } from '@ngx-translate/core';
     FooterComponent,
     MenuOverlayComponent,
     RouterModule,
-    TranslateModule
+    TranslateModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

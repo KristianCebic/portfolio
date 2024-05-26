@@ -1,4 +1,4 @@
-<section id="portfolio" #portfolio>
+<section id="portfolio">
   <img
     style="position: absolute; z-index: -10; top: -190px"
     src="assets/img/shadows/GReen shadow.png"
@@ -11,11 +11,20 @@
   </div>
 
   <div id="selection" class="text">
-    {{ "Explore a selection of my work here - Interact with projects to see my skills in action." | translate }}
+    {{
+      "Explore a selection of my work here - Interact with projects to see my skills in action."
+        | translate
+    }}
   </div>
 
   <!-- 1 PROJEKT -->
-  <div #project id="projekt1" class="sidePadding displayNone">
+  <div
+    data-aos="fade-right"
+    data-aos-offset="400"
+    data-aos-easing="ease-in-sine"
+    id="projekt1"
+    class="sidePadding displayFlex"
+  >
     <div class="projects width">
       <img src="assets/img/pc_projekte/join.png" alt="" />
     </div>
@@ -27,14 +36,33 @@
         {{ "join" | translate }}
       </div>
       <div class="flexEvenly padding gap10">
-        <button id="liveTest" (click)="liveTest('https://kristian-cebic.developerakademie.net/Projekte/Group%20Projects/JOIN/JOIN_dummy/join-656/html/index.html')">Live test</button>
-        <button id="gitHub" (click)="liveTest('https://github.com/KristianCebic/join.git')">Github</button>
+        <button
+          id="liveTest"
+          (click)="
+            liveTest(
+              'https://kristian-cebic.developerakademie.net/Projekte/Group%20Projects/JOIN/JOIN_dummy/join-656/html/index.html'
+            )
+          "
+        >
+          Live test
+        </button>
+        <button
+          id="gitHub"
+          (click)="liveTest('https://github.com/KristianCebic/join.git')"
+        >
+          Github
+        </button>
       </div>
     </div>
   </div>
 
   <!-- 2 PROJEKT -->
-  <div #project class="rowReverse sidePadding displayNone">
+  <div
+    data-aos="fade-left"
+    data-aos-offset="400"
+    data-aos-easing="ease-in-sine"
+    class="rowReverse sidePadding displayFlex"
+  >
     <div class="projects width">
       <img src="assets/img/pc_projekte/elPoloLoco.png" alt="" />
     </div>
@@ -43,17 +71,38 @@
       <h2 class="purple">El Pollo Loco</h2>
       <h3 class="green">JavaScript | HTML | CSS</h3>
       <div class="text">
-        {{"elPoloLoco" | translate}}
+        {{ "elPoloLoco" | translate }}
       </div>
       <div class="flexEvenly padding gap10 justifyFlexEnd">
-        <button id="liveTest" (click)="liveTest('https://kristian-cebic.developerakademie.net/Projekte/El%20Pollo%20Loco/index.html')">Live test</button>
-        <button id="gitHub" (click)="liveTest('https://github.com/KristianCebic/el-pollo-loco.git')">Github</button>
+        <button
+          id="liveTest"
+          (click)="
+            liveTest(
+              'https://kristian-cebic.developerakademie.net/Projekte/El%20Pollo%20Loco/index.html'
+            )
+          "
+        >
+          Live test
+        </button>
+        <button
+          id="gitHub"
+          (click)="
+            liveTest('https://github.com/KristianCebic/el-pollo-loco.git')
+          "
+        >
+          Github
+        </button>
       </div>
     </div>
   </div>
 
   <!-- 3 PROJEKT -->
-  <div #project class="sidePadding displayNone">
+  <div
+    data-aos="fade-right"
+    data-aos-offset="400"
+    data-aos-easing="ease-in-sine"
+    class="sidePadding displayFlex"
+  >
     <div class="projects width">
       <img src="assets/img/pc_projekte/ringoffire.png" alt="" />
     </div>
@@ -62,14 +111,28 @@
       <h2 class="purple">Ring of fire</h2>
       <h3 class="green">Angular | Typescript | SCSS | FIREBASE</h3>
       <div class="text">
-        {{"ringOfFire" | translate}}
+        {{ "ringOfFire" | translate }}
       </div>
       <div class="flexEvenly padding gap10">
-        <button id="liveTest" (click)="liveTest('https://kristian-cebic.developerakademie.net/angular-projects/ringoffire/browser/index.html')">Live test</button>
-        <button id="gitHub" (click)="liveTest('https://github.com/KristianCebic/ringoffire.git')">Github</button>
+        <button
+          id="liveTest"
+          (click)="
+            liveTest(
+              'https://kristian-cebic.developerakademie.net/angular-projects/ringoffire/browser/index.html'
+            )
+          "
+        >
+          Live test
+        </button>
+        <button
+          id="gitHub"
+          (click)="liveTest('https://github.com/KristianCebic/ringoffire.git')"
+        >
+          Github
+        </button>
       </div>
     </div>
   </div>
 
-  <img id="purpleShadow3" src="assets/img/shadows/Purple shadow 3.png" alt="">
+  <img id="purpleShadow3" src="assets/img/shadows/Purple shadow 3.png" alt="" />
 </section>

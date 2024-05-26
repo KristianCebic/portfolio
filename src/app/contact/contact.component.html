@@ -25,45 +25,80 @@
     <div class="form-container">
       <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <input
+          #name="ngModel"
           [(ngModel)]="contactData.name"
+          (keyup)="activateTheSendMessageButton()"
           name="name"
           id="nameInput"
           type="text"
           placeholder="{{ 'Your name' | translate }}"
           required
         />
+
+        @if (!name.valid && name.touched && !name.disabled) {
+        <span class="warnings">{{ "Please enter a name" | translate }}</span>
+        }
+
         <input
+          #email="ngModel"
           [(ngModel)]="contactData.email"
+          (keyup)="activateTheSendMessageButton()"
           name="email"
           id="emailInput"
           type="email"
           placeholder="{{ 'Your email' | translate }}"
           required
         />
+
+        @if (!email.valid && email.touched && !email.disabled) {
+        <span class="warnings">{{ "Please enter an email" | translate }}</span>
+        }
+
         <textarea
           #message="ngModel"
           [(ngModel)]="contactData.message"
           name="message"
+          (keyup)="activateTheSendMessageButton()"
           id="messageInput"
           placeholder="{{ 'Your message' | translate }}"
           required
         ></textarea>
 
         @if (!message.valid && message.touched && !message.disabled) {
-          <span>Please enter a message</span>
+        <span class="warnings">{{ "Please enter a message" | translate }}</span>
         }
 
         <div class="checkbox-container">
           <input
+            name="checkbox"
+            [(ngModel)]="checkbox"
             (click)="activateTheSendMessageButton()"
             type="checkbox"
             id="privacyPolicy1"
             required
+            style="cursor: pointer;"
           />
-          <label for="privacyPolicy"> {{ "I have read the" | translate }} <span id="privacyPolicy2"> {{ "privacy policy" | translate }} </span> {{"and agree to the processing of my data as outlined." | translate }} </label>
+
+          <label for="privacyPolicy">
+            {{ "I have read the" | translate }}
+
+            <a id="privacyPolicy2" routerLink="/privacypolicy" (click)="privacypolicy()" style="cursor: pointer; font-weight: bold;">
+              {{ "privacy policy" | translate }}
+            </a>
+
+            {{
+              "and agree to the processing of my data as outlined." | translate
+            }}
+          </label>
         </div>
+        
         <div class="flex_center">
-          <button id="sendMessage" class="sendMessageButton" type="submit">
+          <button
+            name="sendMessage"
+            id="sendMessage"
+            class="sendMessageButton"
+            type="submit"
+          >
             {{ "Send message" | translate }}
           </button>
         </div>

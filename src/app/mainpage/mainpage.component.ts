@@ -39,5 +39,6 @@ export class MainpageComponent {
 
   toggleMenu(): void {
     this.isVisible = !this.isVisible;
+    console.log('toggleMenu aufgerufen', this.isVisible)
   }
 }

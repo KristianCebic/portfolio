@@ -2,19 +2,18 @@
   display: none;
 }
 
-@media screen and (min-width: 1024px) {
-  .menu {
-    display: flex;
-  }
-
-  .header_overlay {
-    display: none;
-  }
+.header_overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
 }
 
 #name {
-  font-size: clamp(13px, 2vw, 3vw);
+  font-size: clamp(25px, 2vw, 3vw);
   cursor: pointer;
+  margin-left: 10%;
+  font-weight: bold;
 }
 
 #aboutMePurpleDiv {
@@ -48,7 +47,7 @@
 }
 
 .header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100vw;
@@ -59,3 +58,12 @@
   display: none;
 }
 
+@media screen and (min-width: 1024px) {
+  .menu {
+    display: flex;
+  }
+
+  .header_overlay {
+    display: none;
+  }
+}

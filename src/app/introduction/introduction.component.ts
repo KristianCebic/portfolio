@@ -29,4 +29,8 @@ export class IntroductionComponent {
       });
     }
   }
+
+  liveTest(url: string) {
+    window.open(url, '_blank');
+  }
 }

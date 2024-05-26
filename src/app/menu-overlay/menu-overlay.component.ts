@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, HostListener, OnInit, Output, ViewChild } from '@angular/core';
 import { RouterLink, Router } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { VariableServiceService } from '../variable-service.service';
@@ -16,6 +16,8 @@ export class MenuOverlayComponent {
   activeSkills: string | null = null;
   activePortfolio: string | null = null;
   activeContact: string | null = null;
+  
+  // @ViewChild('overlay') menuOverlay!: ElementRef;
 
   @Output() toggleMenu: EventEmitter<void> = new EventEmitter();
 
@@ -38,6 +40,13 @@ export class MenuOverlayComponent {
       body.style.overflowY = 'scroll';
     }
   }
+
+  // @HostListener('document:click', ['$event'])
+  // onDocumentClick(event: MouseEvent) {
+  //   if (!this.menuOverlay.nativeElement.contains(event.target)) {
+  //     this.emitToggleMenu();
+  //   }
+  // }
 
   setActiveElementAboutMe(elementId: string) {
     this.router.navigateByUrl('mainPage');

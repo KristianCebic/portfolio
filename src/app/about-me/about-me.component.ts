@@ -23,7 +23,5 @@ export class AboutMeComponent {
     }
   }
 
-  liveTest(url: string) {
-    window.open(url, '_blank');
-  }
+  
 }

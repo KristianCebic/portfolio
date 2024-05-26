@@ -6,56 +6,21 @@
   ></app-menu-overlay>
 
   <div class="impressum-container"> 
-    <h1>Impressum</h1>
+    <h1 style="text-decoration: underline;">{{ 'Impressum' | translate }}</h1>
     <p>{{'Information according to' | translate}} § 5 TMG:</p>
-    <h2>{{'Website Operator' | translate}}</h2>
+    <h2 style="text-decoration: underline;">{{'Website Operator' | translate}}</h2>
     <p>Kristian Cebic</p>
-    <h2>{{'Contact' | translate}}</h2>
+    <h2 style="text-decoration: underline;">{{'Contact' | translate}}</h2>
     <address>
       Im Isengrind 9<br />
       8046 Zürich<br />
       {{'Switzerland' | translate}}<br />
       E-Mail:
       <a href="mailto:kristian.cebic13@gmail.com"
-        >kristian.cebic13&#64;gmail.com</a
+        >webdevelopment&#64;kristian-cebic.ch</a
       ><br />
       {{'Phone' | translate}}: <a href="tel:+41786903822">+41786903822</a>
     </address>
   </div>
-
-  <footer class="flexCenterColumn" id="footer">
-    <div class="lineHeight">
-      <h1 (click)="scrollToContainer('myPicture')">Kristian</h1>
-      <div id="impressum">
-        <a routerLink="/impressum">Impressum</a>
-        <div class="blueLine"></div>
-      </div>
-    </div>
-
-    <div id="cebic">© Kristian Cebic 2024</div>
-
-    <div class="socialMediaFooter">
-      <img
-      class="socialMediaImg"
-      src="assets/img/social_media1.png"
-      (click)="liveTest('https://github.com/KristianCebic')"
-    />
-    <img
-      routerLink="/mainPage"
-      (click)="scrollToContainer('contact')"
-      class="socialMediaImg"
-      src="assets/img/social_media2.png"
-      alt=""
-    />
-    <img
-      class="socialMediaImg"
-      src="assets/img/social_media3.png"
-      (click)="liveTest('https://www.linkedin.com/in/kristian-cebic-8b1ab424b/')"
-    />
-    </div>
-
-    <div id="impressum2" style="font-size: 16px">
-      <a routerLink="/impressum">Impressum</a>
-    </div>
-  </footer>
 </section>
+<app-footer></app-footer>

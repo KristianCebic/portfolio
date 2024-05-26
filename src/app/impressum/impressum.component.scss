@@ -1,6 +1,9 @@
 section {
     display: flex;
     flex-direction: column;
+    font-weight: 600;
+    font-size: 1rem;
+    overflow: hidden;
 }
 
 h1 {
@@ -18,14 +21,6 @@ h2 {
     overflow-x: hidden;
     height: 435px;
     width: 100%;
-}
-
-p {
-    font-size: 20px;
-}
-
-address {
-    font-size: 20px;
 }
 
 @media screen and (min-height: 696px) {
@@ -138,5 +133,14 @@ address {
       font-size: 38px;
     }
   }
+
+  app-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  
   
 
