@@ -11,8 +11,7 @@ import { AppComponent } from '../app.component';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
-
-
+import { VariableServiceService } from '../variable-service.service';
 
 @Component({
   selector: 'app-mainpage',
@@ -29,16 +28,18 @@ import { TranslateModule } from '@ngx-translate/core';
     AppComponent,
     RouterOutlet,
     CommonModule,
-    TranslateModule
+    TranslateModule,
   ],
   templateUrl: './mainpage.component.html',
   styleUrl: './mainpage.component.scss'
 })
 export class MainpageComponent {
+  constructor(public service: VariableServiceService) {}
+
   isVisible: boolean = false;
 
   toggleMenu(): void {
     this.isVisible = !this.isVisible;
-    console.log('toggleMenu aufgerufen', this.isVisible)
+    this.service.menuOverlay = !this.service.menuOverlay; 
   }
 }

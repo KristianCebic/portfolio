@@ -3,7 +3,6 @@
 #header {
   display: flex;
   justify-content: flex-end;
-  position: relative;
   align-items: center;
 
   img {
@@ -38,7 +37,7 @@ section {
 
 #purpleLine1 {
   background-color: rgb(151, 71, 255);
-  width: 20px;
+  width: 6vw;
   height: 3px;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
@@ -48,6 +47,12 @@ section {
   background-color: rgb(151, 71, 255);
   width: 75px;
   height: 5px;
+}
+
+.purpleLine2 {
+  position: absolute;
+  right: 0;
+  width: 10vw;
 }
 
 #selection {
@@ -94,6 +99,7 @@ section {
 
 #purpleShadow3 {
   display: none;
+  left: 0;
 }
 
 .animationSlideInRight {
@@ -104,10 +110,12 @@ section {
   animation: fade-in-left-side 1s;
 }
 
+
+
 @media screen and (min-width: 1024px) {
   .projects {
     img {
-      height: 260px;
+      height: 220px;
     }
   }
 
@@ -143,19 +151,85 @@ section {
     padding-right: 0;
   }
 
-  .sidePadding {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-
   #purpleShadow3 {
     display: flex;
     position: absolute;
     z-index: -999;
     height: 700px;
-    top: 800px;
+    top: 650px;
   }
 }
 
 
+
+
+
+
+
+
+@media screen and (min-width: 2186px) {
+  .purpleLine2 {
+    width: 10%;
+  }
+}
+
+@media screen and (min-width: 2490px) {
+  .purpleLine2 {
+    width: 11%;
+  }
+}
+
+@media screen and (min-width: 2530px) {
+  .purpleLine2 {
+    width: 12%;
+  }
+}
+
+@media screen and (min-width: 2622px) {
+  .purpleLine2 {
+    width: 13%;
+  }
+}
+
+@media screen and (min-width: 2700px) {
+  .purpleLine2 {
+    width: 14%;
+  }
+}
+
+@media screen and (min-width: 2800px) {
+  .purpleLine2 {
+    width: 16%;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .purpleLine2 {
+    width: 18%;
+  }
+}
+
+@media screen and (min-width: 3200px) {
+  .purpleLine2 {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 3400px) {
+  .purpleLine2 {
+    width: 21%;
+  }
+}
+
+@media screen and (min-width: 3600px) {
+  .purpleLine2 {
+    width: 23%;
+  }
+}
+
+@media screen and (min-width: 3800px) {
+  .purpleLine2 {
+    width: 24%;
+  }
+}
 

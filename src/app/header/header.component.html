@@ -1,53 +1,66 @@
-<div class="header">
-  <div (click)="scrollToKristian()" id="name">
-    K<span class="last-letter">C</span>
+<section>
+  <div id="header" class="header content" (click)="onHeaderClick($event)">
+    <div (click)="scrollToKristian()" id="name" (click)="onKCClick($event)">
+      K<span id="name2" class="last-letter" (click)="onKCClick($event)">C</span>
+    </div>
+
+    <!-- MOBILE -->
+    <div class="header_overlay">
+      <img
+        id="burgerMenu"
+        (click)="emitToggleMenu()"
+        class="cursorPointer"
+        style="height: 20px"
+        src="assets/img/mySkills/burger menu.png"
+        alt=""
+      />
+
+      <img
+        id="x"
+        style="display: none"
+        class="cursorPointer"
+        (click)="emitToggleMenu()"
+        src="assets/img/symbol/X.png"
+      />
+    </div>
+
+    <!-- DESKTOP -->
+    <div class="menu">
+      <div>
+        <img
+          id="flag"
+          class="flags"
+          [src]="'assets/img/flags/' + variableService.currentFlag"
+          (click)="changeLanguage()"
+        />
+      </div>
+
+      <div
+        (click)="setActiveElementAboutMe('aboutMePurpleDiv')"
+        [class.activeAboutMe]="activeAboutMe === 'aboutMePurpleDiv'"
+        i18n
+      >
+        {{ "About me" | translate }}
+        <div id="aboutMePurpleDiv" class="purpleLineMenu"></div>
+      </div>
+
+      <div
+        (click)="setActiveElementSkills('skillsPurpleDiv')"
+        [class.activeSkills]="activeSkills === 'skillsPurpleDiv'"
+        i18n
+      >
+        {{ "Skills" | translate }}
+        <div id="skillsPurpleDiv" class="purpleLineMenu"></div>
+      </div>
+
+      <div
+        (click)="setActiveElementPortfolio('portfolioPurpleDiv')"
+        [class.activePortfolio]="activePortfolio === 'portfolioPurpleDiv'"
+        i18n
+      >
+        Portfolio
+        <div id="portfolioPurpleDiv" class="purpleLineMenu"></div>
+      </div>
+    </div>
   </div>
-
-  <!-- MOBILE -->
-  <div class="header_overlay">
-    <img
-      id="burgerMenu"
-      (click)="emitToggleMenu()"
-      class="cursorPointer"
-      style="height: 20px"
-      src="assets/img/mySkills/burger menu.png"
-      alt=""
-    />
-
-    <img id="x" style="display: none" class="cursorPointer" (click)="emitToggleMenu()" src="assets/img/symbol/X.png" />
-  </div>
-
-  <!-- DESKTOP -->
-  <div class="menu">
-    <div>
-      <img id="flag" class="flags" [src]="'assets/img/flags/' + variableService.currentFlag" (click)="changeLanguage()">
-    </div>
-
-    <div
-      (click)="setActiveElementAboutMe('aboutMePurpleDiv')"
-      [class.activeAboutMe]="activeAboutMe === 'aboutMePurpleDiv'"
-      i18n
-    >
-      {{'About me' | translate}}
-      <div id="aboutMePurpleDiv" class="purpleLineMenu"></div>
-    </div>
-
-    <div
-      (click)="setActiveElementSkills('skillsPurpleDiv')"
-      [class.activeSkills]="activeSkills === 'skillsPurpleDiv'"
-      i18n
-    >
-      {{'Skills' | translate}}
-      <div id="skillsPurpleDiv" class="purpleLineMenu"></div>
-    </div>
-
-    <div
-      (click)="setActiveElementPortfolio('portfolioPurpleDiv')"
-      [class.activePortfolio]="activePortfolio === 'portfolioPurpleDiv'"
-      i18n
-    >
-      Portfolio
-      <div id="portfolioPurpleDiv" class="purpleLineMenu"></div>
-    </div>
-  </div>
-</div>
+</section>

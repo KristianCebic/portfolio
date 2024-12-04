@@ -102,6 +102,7 @@ export class ContactComponent {
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
+            alert("Thank you. Your message has been sent.");
           },
           error: (error) => {
             console.error(error);
@@ -115,5 +116,6 @@ export class ContactComponent {
 
   privacypolicy() {
     this.router.navigate(['/privacypolicy']);
+    window.scrollTo(0, 0);
   }
 }

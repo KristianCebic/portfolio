@@ -1,6 +1,6 @@
 section {
-  position: relative;
-  margin: 0;
+  margin-top: 0;
+  max-width: 1920px;
 }
 
 #introduction {
@@ -9,52 +9,65 @@ section {
   flex-direction: column;
   align-items: center;
   line-height: 5;
-  margin-top: 5%;
+  width: 50%;
 }
 
 .vertical-text {
-  display: none;
+  display: flex;
   transform: rotate(-90deg);
   font-weight: 400;
   line-height: 77px;
   letter-spacing: 0em;
   text-align: left;
-  font-size: clamp(20px, 5vw, 70px);
+  font-size: clamp(18px, 3vw, 40px);
 }
 
 .purpleLine2 {
   background-color: rgb(151, 71, 255);
-  width: 12%;
+  width: 9%;
   height: 3px;
-  max-width: 150px;
   min-width: 50px;
   position: absolute;
   left: 0;
+}
+
+#firstSection {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
 
 .scrollDown {
   display: none;
   transform: rotate(90deg);
   font-weight: 200;
-  line-height: 77px;
   letter-spacing: 0em;
   text-align: left;
   font-size: 23px;
   position: absolute;
   right: 0;
-  bottom: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 200px;
+  top: 55vh;
 }
 
 #name {
   font-weight: 700;
-  font-size: clamp(35px, 10vw, 70px);
+  font-size: clamp(28px,4.1vw,94px);
+  text-align: start;
 }
 
 #special-text {
   font-family: Poppins;
   font-weight: 400;
   color: #9747ff;
-  font-size: clamp(22px, 5vw, 30px);
+  font-size: clamp(19px,2.6vw,63px);
+  text-align: start;
 }
 
 .introduction {
@@ -76,37 +89,47 @@ section {
 }
 
 #myPicture {
-  width: 100vw;
   display: flex;
   justify-content: center;
-  position: relative;
+  align-items: center;
+  width: 50%;
 
   #photo_shadows {
-    height: 540px;
     position: absolute;
     z-index: -999;
-    width: clamp(500px, 90vw, 800px);
-    top: 0px;
+    width: clamp(320px, 55vw, 600px);
+    height: clamp(300px, 45vh, 500px);
   }
+}
 
-  #myPictureIMG {
-    height: clamp(400px, 70vw, 620px);
-    width: clamp(290px, 50vw, 440px);
-  }
+#backgroundStyle {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 20%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#myPictureIMG {
+  height: clamp(280px, 75vh, 535px);
+  width: clamp(280px, 50vw, 646px);
+  object-fit: contain;
+  z-index: -999;
 }
 
 .background {
   width: 100%;
   top: 330px;
-  z-index: -800; 
+  z-index: -800;
   position: absolute;
 }
 
 #socialMedia {
   display: flex;
   justify-content: space-evenly;
-  width: 70vw;
-  
+
   img {
     &:hover {
       transition: transform 0.1s ease-in-out;
@@ -116,13 +139,22 @@ section {
   }
 }
 
+.sectionMargin {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
 #div1 {
   display: flex;
   gap: 10px;
-  justify-content: space-evenly;
   position: relative;
   align-items: center;
-  margin-top: 50px;
+  height: 8%;
+  width: 100vw;
+  position: relative;
+  justify-content: center;
 }
 
 .socialMediaImg {
@@ -137,9 +169,56 @@ section {
 }
 
 .mainContainer {
-  height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+  background-image: url("../../assets/img/background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 0px 140px;
+  height: 100vh;
+}
+
+@media screen and (min-width: 1024px) and (max-height: 600px) {
+  #photo_shadows {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 853px) and (max-height: 1280px) {
+  .mainContainer {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 820px) and (max-height: 1180px) {
+  .mainContainer {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-height: 911px) {
+  .mainContainer {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-height: 1366px) {
+  .mainContainer {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 912px) and (max-height: 1368px) {
+  .mainContainer {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 540px) and (max-height: 720px) {
+  .mainContainer {
+    justify-content: space-evenly;
+  }
 }
 
 @media screen and (min-width: 620px) {
@@ -160,7 +239,12 @@ section {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 900px) {
+  #backgroundStyle {
+    height: 100vh;
+    top: 240px;
+  }
+
   #socialMedia {
     justify-content: flex-start;
     gap: 30px;
@@ -184,26 +268,6 @@ section {
     align-items: center;
   }
 
-  #myPictureIMG {
-    height: 600px;
-  }
-
-  #myPicture {
-    width: 45vw;
-  }
-
-  #name {
-    font-size: 55px;
-  }
-
-  #special-text {
-    font-size: 30px;
-  }
-
-  .vertical-text {
-    font-size: 30px;
-  }
-
   #email {
     display: flex;
   }
@@ -215,3 +279,156 @@ section {
   }
 }
 
+@media screen and (min-width: 1280px) and (max-height: 800px) {
+  .mainContainer {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-height: 600px) {
+  .mainContainer {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-height: 1050px) {
+  #backgroundStyle {
+    top: 180px;
+  }
+}
+
+@media screen and (min-height: 1250px) {
+  #backgroundStyle {
+    top: 140px;
+  }
+}
+
+@media screen and (max-height: 615px) {
+  #backgroundStyle {
+    top: 120px;
+  }
+
+  .sectionMargin {
+    align-items: flex-end;
+  }
+
+  #firstSection {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-height: 1200px) {
+  #backgroundStyle {
+    top: 80px;
+  }
+}
+
+@media screen and (min-height: 1300px) {
+  #backgroundStyle {
+    top: 100px;
+  }
+}
+
+@media screen and (min-height: 1400px) {
+  #backgroundStyle {
+    top: 0px;
+  }
+}
+
+@media screen and (min-height: 1500px) {
+  #backgroundStyle {
+    top: -100px;
+  }
+}
+
+@media screen and (min-height: 1700px) {
+  #backgroundStyle {
+    top: -200px;
+  }
+}
+
+@media screen and (min-height: 2000px) {
+  #backgroundStyle {
+    top: -300px;
+  }
+}
+
+@media screen and (min-width: 676px) {
+  #firstSection {
+    flex-direction: row;
+  }
+
+  .mainContainer {
+    background-position: 0px 300px;
+  }
+}
+
+@media screen and (max-width: 661px) {
+  #myPictureIMG {
+    height: clamp(280px, 40vh, 535px);
+  }
+
+  #introduction {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 675px) and (min-height: 740px) {
+  .vertical-text {
+    font-size: clamp(18px, 6vw, 40px);
+  }
+
+  #name {
+    font-size: clamp(28px, 9vw, 60px);
+  }
+
+  #special-text {
+    font-size: clamp(19px, 6vw, 40px);
+  }
+
+  #firstSection {
+    justify-content: flex-end;
+  }
+
+  #myPictureIMG {
+    height: clamp(280px, 60vh, 430px);
+  }
+
+  #introduction {
+    width: 100%;
+  }
+
+  .mainContainer {
+    background-size: 158% 100%;
+  }
+}
+
+@media screen and (min-height: 780px) {
+  #firstSection {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 2755px) {
+  .purpleLine2 {
+    width: 13%;
+  }
+}
+
+@media screen and (min-width: 2935px) {
+  .purpleLine2 {
+    width: 16%;
+  }
+}
+
+@media screen and (min-width: 3300px) {
+  .purpleLine2 {
+    width: 19%;
+  }
+}
+
+@media screen and (min-width: 3600px) {
+  .purpleLine2 {
+    width: 22%;
+  }
+}

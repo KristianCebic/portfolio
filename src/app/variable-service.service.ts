@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class VariableServiceService {
 
   currentFlag?: string;
+  menuOverlay: boolean = false;
 
   constructor() {
     if (!this.currentFlag) {

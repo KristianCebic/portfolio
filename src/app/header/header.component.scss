@@ -1,3 +1,12 @@
+section {
+  margin-top: unset;
+  background-color: #141d2f;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  
+}
+
 .menu {
   display: none;
 }
@@ -6,59 +15,49 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10%;
 }
 
 #name {
-  font-size: clamp(25px, 2vw, 3vw);
+  font-size: clamp(25px, 2vw, 40px);
   cursor: pointer;
-  margin-left: 10%;
   font-weight: bold;
 }
 
 #aboutMePurpleDiv {
-    display: none;
+  display: none;
 }
 
 #skillsPurpleDiv {
-    display: none;
+  display: none;
 }
 
 #portfolioPurpleDiv {
-    display: none;
+  display: none;
 }
 
 .activeAboutMe {
-    #aboutMePurpleDiv {
-        display: flex;
-    }
+  #aboutMePurpleDiv {
+    display: flex;
+  }
 }
 
 .activeSkills {
-    #skillsPurpleDiv {
-        display: flex;
-    }
+  #skillsPurpleDiv {
+    display: flex;
+  }
 }
 
 .activePortfolio {
-    #portfolioPurpleDiv {
-        display: flex;
-    }
-}
-
-.header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    z-index: 1000; 
+  #portfolioPurpleDiv {
+    display: flex;
+  }
 }
 
 .x {
   display: none;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 912px) {
   .menu {
     display: flex;
   }

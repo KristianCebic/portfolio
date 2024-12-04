@@ -9,8 +9,8 @@ import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component'
 export const routes: Routes = [
     { path: '', component: MainpageComponent },
     { path: 'mainPage', component: MainpageComponent },
-    { path: 'impressum', component: ImpressumComponent },
     { path: 'privacypolicy', component: PrivacypolicyComponent },
+    { path: 'impressum', component: ImpressumComponent },
   ];
 
   const routerOptions : ExtraOptions = {

@@ -1,138 +1,146 @@
 <section id="portfolio">
-  <img
-    style="position: absolute; z-index: -10; top: -190px"
-    src="assets/img/shadows/GReen shadow.png"
-    alt=""
-  />
-  <div id="header">
-    <div id="purpleLine1"></div>
-    <h1>Portfolio</h1>
-    <div class="purpleLine2"></div>
+  <div class="content">
+    <img
+      style="position: absolute; z-index: -10; top: -190px; left: 0"
+      src="assets/img/shadows/GReen shadow.png"
+      alt=""
+    />
+    <div id="header">
+      <div id="purpleLine1"></div>
+      <h1>Portfolio</h1>
+      <div class="purpleLine2"></div>
+    </div>
+
+    <div id="selection" class="text text2">
+      {{
+        "Explore a selection of my work here - Interact with projects to see my skills in action."
+          | translate
+      }}
+    </div>
+
+    <!-- 1 PROJEKT -->
+    <div
+      data-aos="fade-right"
+      data-aos-offset="400"
+      data-aos-easing="ease-in-sine"
+      id="projekt1"
+      class="sidePadding displayFlex"
+    >
+      <div class="projects width">
+        <img src="assets/img/pc_projekte/join.png" alt="" />
+      </div>
+
+      <div class="flexColumnCenter width">
+        <h2 class="purple">Join</h2>
+        <h3 class="green">JavaScript | HTML | CSS | Git | Scrum</h3>
+        <div class="text">
+          {{ "join" | translate }}
+        </div>
+        <div class="flexEvenly padding gap10">
+          <button
+            id="liveTest"
+            (click)="
+              liveTest(
+                'https://kristian-cebic.developerakademie.net/Projekte/Group%20Projects/JOIN/html/index.html'
+              )
+            "
+          >
+            Live test
+          </button>
+          <button
+            id="gitHub"
+            (click)="liveTest('https://github.com/KristianCebic/join.git')"
+          >
+            Github
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 PROJEKT -->
+    <div
+      data-aos="fade-left"
+      data-aos-offset="400"
+      data-aos-easing="ease-in-sine"
+      class="rowReverse sidePadding displayFlex"
+    >
+      <div class="projects width">
+        <img src="assets/img/pc_projekte/elPoloLoco.png"/>
+      </div>
+
+      <div class="flexColumnCenter width flexEnd">
+        <h2 class="purple">El Pollo Loco</h2>
+        <h3 class="green">JavaScript | HTML | CSS</h3>
+        <div class="text">
+          {{ "elPoloLoco" | translate }}
+        </div>
+        <div class="flexEvenly padding gap10 justifyFlexEnd">
+          <button
+            id="liveTest"
+            (click)="
+              liveTest(
+                'https://kristian-cebic.developerakademie.net/Projekte/El%20Pollo%20Loco/index.html'
+              )
+            "
+          >
+            Live test
+          </button>
+          <button
+            id="gitHub"
+            (click)="
+              liveTest('https://github.com/KristianCebic/el-pollo-loco.git')
+            "
+          >
+            Github
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 Projekt -->
+    <div
+      data-aos="fade-right"
+      data-aos-offset="400"
+      data-aos-easing="ease-in-sine"
+      class="sidePadding displayFlex"
+    >
+      <div class="projects width">
+        <img src="assets/img/pc_projekte/dabubble.png"/>
+      </div>
+
+      <div class="flexColumnCenter width flexEnd">
+        <h2 class="purple">DABubble</h2>
+        <h3 class="green">Angular | TypeScript | HTML | SCSS | Firebase</h3>
+        <div class="text">
+          {{ "daBubble" | translate }}
+        </div>
+        <div class="flexEvenly padding gap10 justifyFlexEnd">
+          <button
+            id="liveTest"
+            (click)="
+              liveTest(
+                'https://dabubble.kristian-cebic.ch/'
+              )
+            "
+          >
+            Live test
+          </button>
+          <button
+            id="gitHub"
+            (click)="
+              liveTest('https://github.com/KristianCebic/DABubble.git')
+            "
+          >
+            Github
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <img
+      id="purpleShadow3"
+      src="assets/img/shadows/Purple shadow 3.png"
+      alt=""
+    />
   </div>
-
-  <div id="selection" class="text">
-    {{
-      "Explore a selection of my work here - Interact with projects to see my skills in action."
-        | translate
-    }}
-  </div>
-
-  <!-- 1 PROJEKT -->
-  <div
-    data-aos="fade-right"
-    data-aos-offset="400"
-    data-aos-easing="ease-in-sine"
-    id="projekt1"
-    class="sidePadding displayFlex"
-  >
-    <div class="projects width">
-      <img src="assets/img/pc_projekte/join.png" alt="" />
-    </div>
-
-    <div class="flexColumnCenter width">
-      <h2 class="purple">Join</h2>
-      <h3 class="green">Angular | Typescript | HTML | CSS | FIREBASE</h3>
-      <div class="text">
-        {{ "join" | translate }}
-      </div>
-      <div class="flexEvenly padding gap10">
-        <button
-          id="liveTest"
-          (click)="
-            liveTest(
-              'https://kristian-cebic.developerakademie.net/Projekte/Group%20Projects/JOIN/JOIN_dummy/join-656/html/index.html'
-            )
-          "
-        >
-          Live test
-        </button>
-        <button
-          id="gitHub"
-          (click)="liveTest('https://github.com/KristianCebic/join.git')"
-        >
-          Github
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- 2 PROJEKT -->
-  <div
-    data-aos="fade-left"
-    data-aos-offset="400"
-    data-aos-easing="ease-in-sine"
-    class="rowReverse sidePadding displayFlex"
-  >
-    <div class="projects width">
-      <img src="assets/img/pc_projekte/elPoloLoco.png" alt="" />
-    </div>
-
-    <div class="flexColumnCenter width flexEnd">
-      <h2 class="purple">El Pollo Loco</h2>
-      <h3 class="green">JavaScript | HTML | CSS</h3>
-      <div class="text">
-        {{ "elPoloLoco" | translate }}
-      </div>
-      <div class="flexEvenly padding gap10 justifyFlexEnd">
-        <button
-          id="liveTest"
-          (click)="
-            liveTest(
-              'https://kristian-cebic.developerakademie.net/Projekte/El%20Pollo%20Loco/index.html'
-            )
-          "
-        >
-          Live test
-        </button>
-        <button
-          id="gitHub"
-          (click)="
-            liveTest('https://github.com/KristianCebic/el-pollo-loco.git')
-          "
-        >
-          Github
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- 3 PROJEKT -->
-  <div
-    data-aos="fade-right"
-    data-aos-offset="400"
-    data-aos-easing="ease-in-sine"
-    class="sidePadding displayFlex"
-  >
-    <div class="projects width">
-      <img src="assets/img/pc_projekte/ringoffire.png" alt="" />
-    </div>
-
-    <div class="flexColumnCenter width">
-      <h2 class="purple">Ring of fire</h2>
-      <h3 class="green">Angular | Typescript | SCSS | FIREBASE</h3>
-      <div class="text">
-        {{ "ringOfFire" | translate }}
-      </div>
-      <div class="flexEvenly padding gap10">
-        <button
-          id="liveTest"
-          (click)="
-            liveTest(
-              'https://kristian-cebic.developerakademie.net/angular-projects/ringoffire/browser/index.html'
-            )
-          "
-        >
-          Live test
-        </button>
-        <button
-          id="gitHub"
-          (click)="liveTest('https://github.com/KristianCebic/ringoffire.git')"
-        >
-          Github
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <img id="purpleShadow3" src="assets/img/shadows/Purple shadow 3.png" alt="" />
 </section>

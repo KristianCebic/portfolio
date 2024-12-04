@@ -1,9 +1,11 @@
-<div #overlay class="menu-overlay">
-  <a (click)="setActiveElementAboutMe('aboutMe')">{{'About me' | translate}}</a>
-  <a (click)="setActiveElementSkills('mySkillsSection')">{{'Skills' | translate}}</a>
-  <a (click)="setActiveElementPortfolio('portfolio')">Portfolio</a>
-  <a (click)="setActiveElementContact('contact')">{{'Contact' | translate}}</a>
-  <div>
-    <img id="flagInHeader" class="flags" [src]="'assets/img/flags/' + variableService.currentFlag" (click)="changeLanguage()">
+<div id="overlay" #overlay class="menu-overlay" (click)="onOverlayClick($event)">
+  <div class="flexCenterColumn">
+    <a (click)="setActiveElementAboutMe('aboutMe')">{{'About me' | translate}}</a>
+    <a (click)="setActiveElementSkills('mySkillsSection')">{{'Skills' | translate}}</a>
+    <a (click)="setActiveElementPortfolio('portfolio')">Portfolio</a>
+    <a (click)="setActiveElementContact('contact')">{{'Contact' | translate}}</a>
+    <div>
+      <img id="flagInHeader" class="flags" [src]="'assets/img/flags/' + variableService.currentFlag" (click)="changeLanguage()">
+    </div>
   </div>
 </div>

@@ -2,10 +2,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+}
 
-  h1 {
-    margin-right: 25px;
-  }
+.purpleLine2 {
+  position: absolute;
+  right: 0;
+  width: 6vw;
+}
+
+.button {
+  width: auto;
+}
+
+.getInTouchButton1 {
+  display: flex; justify-content: center; margin-top: 40px;
+}
+
+.getInTouchButton2 {
+  display: none; justify-content: center; margin-top: 40px;
 }
 
 .img {
@@ -15,12 +30,25 @@
     }
 }
 
-.grid {
+#mySkillsSection {
   display: flex;
-  flex-direction: column;
-  margin-top: 40px;
-  gap: 17px;
+  justify-content: center;
+  position: relative;
+}
 
+.rowReverse {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  max-width: 1920px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 10px; 
+  margin: 20px; 
+  margin-left: 0;
   img {
     height: 45px;
   }
@@ -44,11 +72,11 @@ h1 {
 }
 
 #mySkillsH1 {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
-  position: relative;
   align-items: center;
+  text-align: right;
 }
 
 #getInTouch {
@@ -67,5 +95,99 @@ h1 {
 
   .grid {
     width: 50%;
+  }
+
+  .purpleLine2 {
+    width: 10%;
+  }
+}
+
+.mySkillsText {
+  text-align: right; 
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.2px;
+  padding: 0;
+  padding-right: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+  .getInTouchButton1 {
+    display: none;
+  }
+
+  .getInTouchButton2 {
+    display: flex;
+  }
+
+  .rowReverse {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .getInTouchButton {
+    display: flex;
+    justify-content: center;
+  }
+
+  .grid {
+    margin: 0;
+    width: 100%;
+    margin-top: 40px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.setTextInTheMiddle {
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media screen and (min-width: 1100px) {
+  .purpleLine2 {
+    width: 15%;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .purpleLine2 {
+    width: 9%;
+  }
+}
+
+@media screen and (min-width: 2550px) {
+  .purpleLine2 {
+    width: 11%;
+  }
+}
+
+@media screen and (min-width: 2700px) {
+  .purpleLine2 {
+    width: 13%;
+  }
+}
+
+@media screen and (min-width: 2900px) {
+  .purpleLine2 {
+    width: 15%;
+  }
+}
+
+@media screen and (min-width: 3200px) {
+  .purpleLine2 {
+    width: 18%;
+  }
+}
+
+@media screen and (min-width: 3400px) {
+  .purpleLine2 {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 3600px) {
+  .purpleLine2 {
+    width: 23%;
   }
 }

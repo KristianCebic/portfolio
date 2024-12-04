@@ -7,14 +7,14 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
-import { FooterComponent } from './footer/footer.component';
 import { MenuOverlayComponent } from './menu-overlay/menu-overlay.component';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule,
+  imports: [
+    CommonModule,
     RouterOutlet,
     HeaderComponent,
     IntroductionComponent,
@@ -22,13 +22,12 @@ import { TranslateModule } from '@ngx-translate/core';
     MySkillsComponent,
     PortfolioComponent,
     ContactComponent,
-    FooterComponent,
     MenuOverlayComponent,
     RouterModule,
     TranslateModule,
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'Portfolio';

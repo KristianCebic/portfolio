@@ -1,115 +1,118 @@
 <section id="contact">
-  <div class="flexAlignCenter" style="gap: 6px">
-    <div class="purpleLine"></div>
-    <h1>{{ "Contact" | translate }}</h1>
-  </div>
-
-  <img
-    class="shadow"
-    src="assets/img/shadows/greenShadowRightSide.png"
-    alt=""
-  />
-
-  <div class="padding column flex paddingLeftAndRight">
-    <div>
-      <h2>{{ "Got a problem to solve?" | translate }}</h2>
-      <div class="text">
-        {{ "contactMe" | translate }}
-      </div>
-      <div class="text">
-        {{ "Need a Frontend developer?" | translate }}
-        <span>{{ "Contact me!" | translate }}</span>
-      </div>
+  <div class="content">
+    <div class="flexAlignCenter" style="gap: 6px">
+      <div class="purpleLine"></div>
+      <h1>{{ "Contact" | translate }}</h1>
     </div>
-
-    <div class="form-container">
-      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-        <input
-          #name="ngModel"
-          [(ngModel)]="contactData.name"
-          (keyup)="activateTheSendMessageButton()"
-          name="name"
-          id="nameInput"
-          type="text"
-          placeholder="{{ 'Your name' | translate }}"
-          required
-        />
-
-        @if (!name.valid && name.touched && !name.disabled) {
-        <span class="warnings">{{ "Please enter a name" | translate }}</span>
-        }
-
-        <input
-          #email="ngModel"
-          [(ngModel)]="contactData.email"
-          (keyup)="activateTheSendMessageButton()"
-          name="email"
-          id="emailInput"
-          type="email"
-          placeholder="{{ 'Your email' | translate }}"
-          required
-        />
-
-        @if (!email.valid && email.touched && !email.disabled) {
-        <span class="warnings">{{ "Please enter an email" | translate }}</span>
-        }
-
-        <textarea
-          #message="ngModel"
-          [(ngModel)]="contactData.message"
-          name="message"
-          (keyup)="activateTheSendMessageButton()"
-          id="messageInput"
-          placeholder="{{ 'Your message' | translate }}"
-          required
-        ></textarea>
-
-        @if (!message.valid && message.touched && !message.disabled) {
-        <span class="warnings">{{ "Please enter a message" | translate }}</span>
-        }
-
-        <div class="checkbox-container">
+  
+    <img
+      class="shadow"
+      src="assets/img/shadows/greenShadowRightSide.png"
+      alt=""
+    />
+  
+    <div class="column flex">
+      <div>
+        <h2>{{ "Got a problem to solve?" | translate }}</h2>
+        <div class="text" style="margin-top: 20px;">
+          {{ "contactMe" | translate }}
+        </div>
+        <div class="text" style="margin-top: 10px;">
+          {{ "Need a Frontend developer?" | translate }}
+          <span>{{ "Contact me!" | translate }}</span>
+        </div>
+      </div>
+  
+      <div class="form-container">
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
           <input
-            name="checkbox"
-            [(ngModel)]="checkbox"
-            (click)="activateTheSendMessageButton()"
-            type="checkbox"
-            id="privacyPolicy1"
+            #name="ngModel"
+            [(ngModel)]="contactData.name"
+            (keyup)="activateTheSendMessageButton()"
+            name="name"
+            id="nameInput"
+            type="text"
+            placeholder="{{ 'Your name' | translate }}"
             required
-            style="cursor: pointer;"
           />
-
-          <label for="privacyPolicy">
-            {{ "I have read the" | translate }}
-
-            <a id="privacyPolicy2" routerLink="/privacypolicy" (click)="privacypolicy()" style="cursor: pointer; font-weight: bold;">
-              {{ "privacy policy" | translate }}
-            </a>
-
-            {{
-              "and agree to the processing of my data as outlined." | translate
-            }}
-          </label>
-        </div>
-        
-        <div class="flex_center">
-          <button
-            name="sendMessage"
-            id="sendMessage"
-            class="sendMessageButton"
-            type="submit"
-          >
-            {{ "Send message" | translate }}
-          </button>
-        </div>
-      </form>
-      <div class="flexEnd">
-        <div id="goUpButton" (click)="scrollToContainer('myPicture')">
-          <img src="assets/img/symbol/arrowUp.png" alt="" />
+  
+          @if (!name.valid && name.touched && !name.disabled) {
+          <span class="warnings">{{ "Please enter a name" | translate }}</span>
+          }
+  
+          <input
+            #email="ngModel"
+            [(ngModel)]="contactData.email"
+            (keyup)="activateTheSendMessageButton()"
+            name="email"
+            id="emailInput"
+            type="email"
+            placeholder="{{ 'Your email' | translate }}"
+            required
+          />
+  
+          @if (!email.valid && email.touched && !email.disabled) {
+          <span class="warnings">{{ "Please enter an email" | translate }}</span>
+          }
+  
+          <textarea
+            #message="ngModel"
+            [(ngModel)]="contactData.message"
+            name="message"
+            (keyup)="activateTheSendMessageButton()"
+            id="messageInput"
+            type="text"
+            placeholder="{{ 'Your message' | translate }}"
+            required
+          ></textarea>
+  
+          @if (!message.valid && message.touched && !message.disabled) {
+          <span class="warnings">{{ "Please enter a message" | translate }}</span>
+          }
+  
+          <div class="checkbox-container">
+            <input
+              name="checkbox"
+              [(ngModel)]="checkbox"
+              (click)="activateTheSendMessageButton()"
+              type="checkbox"
+              id="privacyPolicy1"
+              required
+              style="cursor: pointer;"
+            />
+  
+            <label for="privacyPolicy">
+              {{ "I have read the" | translate }}
+  
+              <a id="privacyPolicy2" routerLink="/privacypolicy" (click)="privacypolicy()" style="cursor: pointer; font-weight: bold;">
+                {{ "privacy policy" | translate }}
+              </a>
+  
+              {{
+                "and agree to the processing of my data as outlined." | translate
+              }}
+            </label>
+          </div>
+          
+          <div class="flex_center">
+            <button
+              name="sendMessage"
+              id="sendMessage"
+              class="sendMessageButton"
+              type="submit"
+            >
+              {{ "Send message" | translate }}
+            </button>
+          </div>
+        </form>
+        <div class="flexEnd" style="margin-bottom: 30px;">
+          <div id="goUpButton" (click)="scrollToContainer('myPicture')">
+            <img src="assets/img/symbol/arrowUp.png" alt="" />
+          </div>
         </div>
       </div>
     </div>
+  
+    <img class="purpleShadow" src="assets/img/shadows/purpleShadow.png" alt="" />
   </div>
-
-  <img class="purpleShadow" src="assets/img/shadows/purpleShadow.png" alt="" />
 </section>

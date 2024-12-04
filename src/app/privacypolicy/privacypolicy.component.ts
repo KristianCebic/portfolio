@@ -9,9 +9,16 @@ import { MenuOverlayComponent } from '../menu-overlay/menu-overlay.component';
 @Component({
   selector: 'app-privacypolicy',
   standalone: true,
-  imports: [TranslateModule, CommonModule, RouterLink, HeaderComponent, FooterComponent, MenuOverlayComponent],
+  imports: [
+    TranslateModule,
+    CommonModule,
+    RouterLink,
+    HeaderComponent,
+    FooterComponent,
+    MenuOverlayComponent,
+  ],
   templateUrl: './privacypolicy.component.html',
-  styleUrl: './privacypolicy.component.scss'
+  styleUrl: './privacypolicy.component.scss',
 })
 export class PrivacypolicyComponent {
   constructor(private router: Router) {}

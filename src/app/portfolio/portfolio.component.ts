@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, PLATFORM_ID, Inject } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -13,8 +14,12 @@ import 'aos/dist/aos.css';
 
 export class PortfolioComponent implements OnInit {
  
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
   ngOnInit() {
-    AOS.init();
+    if (isPlatformBrowser(this.platformId)) {
+      AOS.init();
+    }
   }
 
   liveTest(url: string) {

@@ -1,35 +1,38 @@
 <div class="mainContainer">
-  <section id="firstSection">
-    <img class="background" src="assets/img/background_2.png" />
+
+  <div style="flex-direction: column;" class="sectionMargin">
+
+    <section id="firstSection">
   
-    <div id="myPicture">
-      <img id="photo_shadows" src="assets/img/photo shadows.png" />
-      <img id="myPictureIMG" src="assets/img/Bewerbungsfoto.png" />
-    </div>
-  
-    <div id="introduction">
-      <div class="introduction">
-        <div class="vertical-text">
-          {{ "I am" | translate }}
+      <div id="myPicture">
+        <img id="myPictureIMG" src="assets/img/newPictureBrownEyes.png"/>
+      </div>
+    
+      <div id="introduction">
+        <div class="introduction">
+          <div class="vertical-text">
+            {{ "I am" | translate }}
+          </div>
+          <div id="second-container">
+            <div id="name">Kristian Cebic</div>
+            <div id="special-text">{{ "FRONTEND DEVELOPER" | translate }}</div>
+          </div>
         </div>
-        <div id="second-container">
-          <div id="name">Kristian Cebic</div>
-          <div id="special-text">{{ "FRONTEND DEVELOPER" | translate }}</div>
+    
+        <div id="letsTalkDiv" class="button" (click)="scrollToContainer('contact')">
+          {{ "talk!" | translate }}
         </div>
       </div>
-  
-      <div id="letsTalkDiv" class="button" (click)="scrollToContainer('contact')">
-        {{ "talk!" | translate }}
-      </div>
-    </div>
-  
-    <div class="scrollDown">{{ "Scroll down" | translate }} -></div>
-  </section>
-  
+    
+      <div class="scrollDown">{{ "Scroll down" | translate }} -></div>
+    </section>
+
+  </div>
+
   <div id="div1">
     <div class="purpleLine2"></div>
   
-    <div id="socialMedia">
+    <div id="socialMedia" class="content">
       <img
         id="social_media1"
         class="socialMediaImg"
@@ -54,8 +57,10 @@
         class="font_size14"
         (click)="scrollToContainer('contact')"
       >
-        kristian.cebic13&#64;gmail.com
+        webdevelopment&#64;kristian-cebic.ch
       </div>
     </div>
+
   </div>
+
 </div>

@@ -1,85 +1,119 @@
 <section id="mySkillsSection">
-  <div class="mySkills">
-    <div id="mySkillsH1">
-      <h1>{{'My skills' | translate}}</h1>
-      <div class="purpleLine2"></div>
-    </div>
-  
-    <div
-      style="text-align: right; padding-right: 10px; padding-left: 10px"
-      class="text"
-    >
-      <span style="text-align: center; text-align: center; margin-bottom: 5%">
-      {{ 'I have gained experience in building projects with various front end technologies and concepts.' | translate }}
-      </span>
+  <div class="sectionMargin rowReverse">
+    <div class="mySkills">
+      <div id="mySkillsH1">
+        <h1>{{ "My skills" | translate }}</h1>
+        <div class="purpleLine2"></div>
+      </div>
+
+      <div class="mySkillsText">
+        <span style="text-align: center; text-align: center; margin-bottom: 5%">
+          {{
+            "I have gained experience in building projects with various front end technologies and concepts."
+              | translate
+          }}
+        </span>
+      </div>
+
+      <!-- GET IN TOUCH BUTTON 1 -->
+      <div>
+        <div
+          id="getInTouch"
+          class="button getInTouchButton1"
+          (click)="scrollToContainer('contact')"
+        >
+          {{ "Get in touch" | translate }}
+        </div>
+      </div>
     </div>
 
-    <!-- GET IN TOUCH BUTTON -->
-  <div style="display: flex; justify-content: center; margin-top: 40px">
-    <div id="getInTouch" class="button" (click)="scrollToContainer('contact')">{{'Get in touch' | translate}}</div>
-  </div>
-  </div>
-  
-  <div class="grid">
-    <!-- ERSTE REIHE -->
-    <div class="line-height">
-      <div class="mySkills" style="padding-left: 4px;">
-        <img class="img" src="assets/img/mySkills/angular.png" alt="" />
-        <span class="fontsOfMySkills">Angular</span>
-      </div>
-  
-      <div class="mySkills" style="padding-left: 5px;">
-        <img class="img" src="assets/img/mySkills/ts.png" alt="" />
-        <span class="fontsOfMySkills">TypeScript</span>
-      </div>
-  
+    <div class="grid">
+      <!-- ERSTE REIHE -->
+
       <div class="mySkills">
-        <img class="img" src="assets/img/mySkills/Javascript.png" alt="" />
-        <span class="fontsOfMySkills">JavaScript</span>
+        <div class="flexCenterColumn">
+          <img class="img" src="assets/img/mySkills/angular.png" alt="" />
+          <span class="fontsOfMySkills">Angular</span>
+        </div>
+      </div>
+
+      <div class="mySkills">
+        <div class="flexCenterColumn">
+          <img class="img" src="assets/img/mySkills/ts.png" alt="" />
+          <span class="fontsOfMySkills">TypeScript</span>
+        </div>
+      </div>
+
+      <div class="mySkills">
+        <div class="flexCenterColumn">
+          <img class="img" src="assets/img/mySkills/Javascript.png" alt="" />
+          <span class="fontsOfMySkills">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="mySkills">
+        <div class="flexCenterColumn">
+          <img class="img" src="assets/img/mySkills/html.png" alt="" />
+          <span class="fontsOfMySkills">HTML</span>
+        </div>
+      </div>
+
+      <!-- zweite Reihe -->
+
+      <div class="mySkills">
+        <div class="flexCenterColumn">
+          <img class="img" src="assets/img/mySkills/Firebase.png" alt="" />
+          <span class="fontsOfMySkills">Firebase</span>
+        </div>
+      </div>
+
+      <div class="mySkills">
+        <div class="flexCenterColumn">
+          <img class="img" src="assets/img/mySkills/git.png" alt="" />
+          <span class="fontsOfMySkills">GIT</span>
+        </div>
+      </div>
+
+      <div class="mySkills">
+        <div class="flexCenterColumn">
+          <img class="img" src="assets/img/mySkills/Vector (2).png" alt="" />
+          <span class="fontsOfMySkills">CSS</span>
+        </div>
+      </div>
+
+      <div class="mySkills">
+        <div class="flexCenterColumn">
+          <img class="img" src="assets/img/mySkills/Vector (3).png" alt="" />
+          <span class="fontsOfMySkills">Rest-Api</span>
+        </div>
+      </div>
+
+      <!-- DRITTE REIHE -->
+
+      <div class="mySkills">
+        <div class="flexCenterColumn">
+          <img class="img" src="assets/img/mySkills/Icons (1).png" alt="" />
+          <span class="fontsOfMySkills">Scrum</span>
+        </div>
+      </div>
+
+      <div class="mySkills">
+        <div class="flexCenterColumn">
+          <img class="img" src="assets/img/mySkills/Icons (2).png" alt="" />
+          <span class="fontsOfMySkills setTextInTheMiddle">Material<br>Design</span>
+        </div>
       </div>
     </div>
-  
-    <!-- zweite Reihe -->
-    <div class="line-height">
-      <div class="mySkills">
-        <img class="img" src="assets/img/mySkills/html.png" alt="" />
-        <span class="fontsOfMySkills">HTML</span>
+
+    <!-- GET IN TOUCH BUTTON 2 -->
+    <div class="getInTouchButton">
+      <div
+        id="getInTouch2"
+        class="button getInTouchButton2"
+        (click)="scrollToContainer('contact')"
+      >
+        {{ "Get in touch" | translate }}
       </div>
-  
-      <div class="mySkills">
-        <img class="img" src="assets/img/mySkills/Firebase.png" alt="" />
-        <span class="fontsOfMySkills">Firebase</span>
-      </div>
-  
-      <div class="mySkills">
-        <img class="img" src="assets/img/mySkills/git.png" alt="" />
-        <span class="fontsOfMySkills">GIT</span>
-      </div>
-    </div>
-  
-    <!-- DRITTE REIHE -->
-    <div class="line-height">
-      <div class="mySkills" style="padding-left: 14px;">
-        <img class="img" src="assets/img/mySkills/Vector (2).png" alt="" />
-        <span class="fontsOfMySkills">CSS</span>
-      </div>
-  
-      <div class="mySkills" style="margin-left: 10px;">
-        <img class="img" src="assets/img/mySkills/Icons (2).png" alt="" />
-        <span class="fontsOfMySkills">Material Design</span>
-      </div>
-  
-      <div class="mySkills" style="padding-right: 6px;">
-        <img class="img" src="assets/img/mySkills/Vector (3).png" alt="" />
-        <span class="fontsOfMySkills">Rest-Api</span>
-      </div>
-    </div>
-  
-    <!-- VIERTE REIHE -->
-    <div class="mySkills">
-      <img class="img" src="assets/img/mySkills/Icons (1).png" alt="" />
-      <span class="fontsOfMySkills">Scrum</span>
     </div>
   </div>
 </section>
-

@@ -13,10 +13,9 @@ h1 {
 }
 
 section {
-  border-top: 4px solid rgba(112, 230, 28, 1);
   background-color: rgb(20, 29, 47);
   line-height: 100px;
-  
+  margin-top: 0;
 }
 
 #impressum {
@@ -34,8 +33,8 @@ section {
 
 .socialMediaFooter {
   display: flex;
-  justify-content: space-evenly;
-  width: 70vw;
+  justify-content: space-between;
+  width: 30vw;
   img {
     &:hover {
       transition: transform 0.1s ease-in-out;
@@ -81,7 +80,6 @@ section {
   }
 
   section {
-    padding: 2%;
     line-height: 50px;
   }
 
@@ -91,5 +89,26 @@ section {
 
   h1 {
     font-size: 38px;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 291px;
+  max-height: 380px;
+}
+
+#greenLine {
+  background-color: rgba(112, 230, 28, 1);
+  height: 4px;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer {
+    flex-direction: column;
+    justify-content: space-around;
   }
 }

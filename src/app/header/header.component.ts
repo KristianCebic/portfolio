@@ -42,6 +42,9 @@ export class HeaderComponent {
       burgerMenu.style.display = 'flex';
       x.style.display = 'none';
     }
+
+    const body: HTMLElement = document.getElementById('body') as HTMLElement;
+    body.style.overflowY = 'hidden';
   }
 
   setActiveElementAboutMe(elementId: string) {
@@ -110,6 +113,24 @@ export class HeaderComponent {
         message.placeholder = "Your message";
       }
       this.translate.use('en');
+    }
+  }
+
+  onHeaderClick($event: MouseEvent) {
+    const header = $event.target as HTMLElement;
+
+    if (this.variableService.menuOverlay === true && header.id === "header") {
+      this.emitToggleMenu()
+      console.log('onHeaderClick')
+    }
+  }
+
+  onKCClick($event: MouseEvent) {
+    const kc = $event.target as HTMLElement;
+
+    if (this.variableService.menuOverlay === true && (kc.id === "name" || kc.id === "name2")) {
+      this.emitToggleMenu()
+      console.log('onKCClick')
     }
   }
 }

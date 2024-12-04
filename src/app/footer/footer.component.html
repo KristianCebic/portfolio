@@ -1,34 +1,41 @@
+<div id="greenLine"></div>
 <section class="flexCenterColumn" id="footer">
-  <div class="lineHeight">
-    <h1 (click)="scrollToContainer('myPicture')">Kristian</h1>
-    <div id="impressum">
-      <a routerLink="/impressum">{{ 'Impressum' | translate }}</a>
-      <div class="blueLine"></div>
+  <div class="footer content">
+    <div class="lineHeight">
+      <h1 (click)="scrollToContainer('myPicture')">Kristian</h1>
+      <div id="impressum">
+        <a routerLink="/impressum">{{ "Impressum" | translate }}</a>
+        <div class="blueLine"></div>
+      </div>
     </div>
-  </div>
 
-  <div id="cebic">© Kristian Cebic 2024</div>
-
-  <div class="socialMediaFooter">
-    <img
-      class="socialMediaImg"
-      src="assets/img/social_media1.png"
-      (click)="liveTest('https://github.com/KristianCebic')"
-    />
-    <img
-      (click)="scrollToContainer('contact')"
-      class="socialMediaImg"
-      src="assets/img/social_media2.png"
-      alt=""
-    />
-    <img
-      class="socialMediaImg"
-      src="assets/img/social_media3.png"
-      (click)="liveTest('https://www.linkedin.com/in/kristian-cebic-8b1ab424b/')"
-    />
-  </div>
-
-  <div id="impressum2" style="font-size: 16px">
-    <a routerLink="/impressum">{{ 'Impressum' | translate }}</a>
+    <div id="cebic">© Kristian Cebic 2024</div>
+    
+    <div style="display: flex; justify-content: flex-end;">
+      <div class="socialMediaFooter">
+        <img
+          class="socialMediaImg"
+          src="assets/img/social_media1.png"
+          (click)="liveTest('https://github.com/KristianCebic')"
+        />
+        <img
+          (click)="scrollToContainer('contact')"
+          class="socialMediaImg"
+          src="assets/img/social_media2.png"
+          alt=""
+        />
+        <img
+          class="socialMediaImg"
+          src="assets/img/social_media3.png"
+          (click)="
+            liveTest('https://www.linkedin.com/in/kristian-cebic-8b1ab424b/')
+          "
+        />
+      </div>
+    </div>
+    
+    <div id="impressum2" style="font-size: 16px">
+      <a routerLink="/impressum">{{ "Impressum" | translate }}</a>
+    </div>
   </div>
 </section>

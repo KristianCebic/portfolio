@@ -1,26 +1,40 @@
-<section>
+<div id="impressumComponent">
   <app-header (toggleMenu)="toggleMenu()"></app-header>
+
   <app-menu-overlay
     (toggleMenu)="toggleMenu()"
     *ngIf="isVisible"
   ></app-menu-overlay>
+  
+  <div id="mainSectionImpressum">
+    <div class="grid">
+      <div>
+        <h1 style="text-decoration: underline">{{ "Impressum" | translate }}</h1>
+        <p>{{ "Information according to" | translate }} § 5 TMG:</p>
+      </div>
+      
+      <div>
+        <h2 style="text-decoration: underline">
+          {{ "Website Operator" | translate }}
+        </h2>
+        <p>Kristian Cebic</p>
+      </div>
 
-  <div class="impressum-container"> 
-    <h1 style="text-decoration: underline;">{{ 'Impressum' | translate }}</h1>
-    <p>{{'Information according to' | translate}} § 5 TMG:</p>
-    <h2 style="text-decoration: underline;">{{'Website Operator' | translate}}</h2>
-    <p>Kristian Cebic</p>
-    <h2 style="text-decoration: underline;">{{'Contact' | translate}}</h2>
-    <address>
-      Im Isengrind 9<br />
-      8046 Zürich<br />
-      {{'Switzerland' | translate}}<br />
-      E-Mail:
-      <a href="mailto:kristian.cebic13@gmail.com"
-        >webdevelopment&#64;kristian-cebic.ch</a
-      ><br />
-      {{'Phone' | translate}}: <a href="tel:+41786903822">+41786903822</a>
-    </address>
+      <div>
+        <h2 style="text-decoration: underline">{{ "Contact" | translate }}</h2>
+        <address>
+          Hungerbergstrasse 15<br />
+          8046 Zürich<br />
+          {{ "Switzerland" | translate }}<br />
+          E-Mail:
+          <a href="mailto:kristian.cebic13@gmail.com"
+            >webdevelopment&#64;kristian-cebic.ch</a
+          ><br />
+          {{ "Phone" | translate }}: <a href="tel:+41786903822">+41786903822</a>
+        </address>
+      </div>
+    </div>
   </div>
-</section>
-<app-footer></app-footer>
+
+  <app-footer></app-footer>
+</div>
