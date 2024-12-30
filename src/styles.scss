@@ -187,6 +187,11 @@ button {
   gap: 10px;
 }
 
+.gap30 {
+  display: flex;
+  gap: 30px;
+}
+
 .sectionMargin {
   margin-left: 10%;
   margin-right: 10%;
@@ -220,12 +225,13 @@ section {
 }
 
 .button {
-  padding: 15px 30px 15px 30px;
+  text-align: center;
+  padding: 18px;
   border-radius: 10px;
   background: rgb(112, 230, 28);
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  height: 20px;
-  width: 75px;
+  width: 200px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,6 +245,10 @@ section {
     transition: transform 0.1s ease-in-out;
     transform: scale(1.2);
   }
+}
+
+.button-bigger-width {
+  width: 160px;
 }
 
 .purpleLineMenu {
@@ -257,12 +267,6 @@ section {
 
 #footer {
   line-height: 45px;
-}
-
-@media screen and (min-width: 1024px) {
-  .lineHeight {
-    height: 100px;
-  }
 }
 
 @keyframes fade-in-right-side {

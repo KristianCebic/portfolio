@@ -19,7 +19,19 @@ section {
   line-height: 77px;
   letter-spacing: 0em;
   text-align: left;
-  font-size: clamp(18px, 3vw, 40px);
+  font-size: clamp(10px, 2vw, 25px);
+
+  @media (max-width: 341px){
+    font-size: 12px;
+  }
+
+  @media (max-width: 846px){
+    font-size: 14px;
+  }
+
+  @media (max-width: 649px){
+    font-size: 0;
+  }
 }
 
 .purpleLine2 {
@@ -58,7 +70,7 @@ section {
 
 #name {
   font-weight: 700;
-  font-size: clamp(28px,4.1vw,94px);
+  font-size: clamp(28px,4.1vw,60px);
   text-align: start;
 }
 
@@ -66,7 +78,7 @@ section {
   font-family: Poppins;
   font-weight: 400;
   color: #9747ff;
-  font-size: clamp(19px,2.6vw,63px);
+  font-size: clamp(19px,2.6vw,40px);
   text-align: start;
 }
 
@@ -85,7 +97,7 @@ section {
 }
 
 #letsTalkDiv {
-  width: 124px;
+  width: 160px;
 }
 
 #myPicture {
@@ -113,10 +125,32 @@ section {
 }
 
 #myPictureIMG {
-  height: clamp(280px, 75vh, 535px);
-  width: clamp(280px, 50vw, 646px);
   object-fit: contain;
   z-index: -999;
+
+  @media (max-height: 510px) {
+    height: 211px;
+  }
+
+  @media (min-height: 511px) {
+    height: 241px;
+  }
+
+  @media (min-height: 555px) {
+    height: 261px;
+  }
+
+  @media (min-height: 582px) {
+    height: 311px;
+  }
+
+  @media (min-height: 660px) {
+    height: 381px;
+  }
+
+  @media (min-height: 752px) {
+    height: 440px;
+  }
 }
 
 .background {
@@ -174,50 +208,26 @@ section {
   position: relative;
   background-image: url("../../assets/img/background.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: 0px 140px;
+  background-size: 156% 170%;
+  background-position: 0px -46px;
   height: 100vh;
+
+  @media (min-height: 842px) {
+    background-position: 0px -85px;
+  }
+
+  @media (min-height: 987px) {
+    background-position: 0px -122px;
+  }
+
+  @media (min-height: 1150px) {
+    background-position: 0px -164px;
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-height: 600px) {
   #photo_shadows {
     height: 400px;
-  }
-}
-
-@media screen and (min-width: 853px) and (max-height: 1280px) {
-  .mainContainer {
-    justify-content: space-evenly;
-  }
-}
-
-@media screen and (min-width: 820px) and (max-height: 1180px) {
-  .mainContainer {
-    justify-content: space-evenly;
-  }
-}
-
-@media screen and (max-height: 911px) {
-  .mainContainer {
-    justify-content: space-evenly;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-height: 1366px) {
-  .mainContainer {
-    justify-content: space-evenly;
-  }
-}
-
-@media screen and (min-width: 912px) and (max-height: 1368px) {
-  .mainContainer {
-    justify-content: space-evenly;
-  }
-}
-
-@media screen and (min-width: 540px) and (max-height: 720px) {
-  .mainContainer {
-    justify-content: space-evenly;
   }
 }
 
@@ -279,18 +289,6 @@ section {
   }
 }
 
-@media screen and (min-width: 1280px) and (max-height: 800px) {
-  .mainContainer {
-    justify-content: space-evenly;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-height: 600px) {
-  .mainContainer {
-    justify-content: space-evenly;
-  }
-}
-
 @media screen and (min-height: 1050px) {
   #backgroundStyle {
     top: 180px;
@@ -303,18 +301,12 @@ section {
   }
 }
 
-@media screen and (max-height: 615px) {
-  #backgroundStyle {
-    top: 120px;
-  }
+.sectionMargin {
+  align-items: flex-end;
+}
 
-  .sectionMargin {
-    align-items: flex-end;
-  }
-
-  #firstSection {
-    justify-content: flex-end;
-  }
+#firstSection {
+  justify-content: flex-end;
 }
 
 @media screen and (min-height: 1200px) {
@@ -353,53 +345,25 @@ section {
   }
 }
 
-@media screen and (min-width: 676px) {
+@media screen and (min-width: 608px) {
   #firstSection {
     flex-direction: row;
   }
-
-  .mainContainer {
-    background-position: 0px 300px;
-  }
 }
 
-@media screen and (max-width: 661px) {
-  #myPictureIMG {
-    height: clamp(280px, 40vh, 535px);
-  }
-
+@media screen and (max-width: 607px) {
   #introduction {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 675px) and (min-height: 740px) {
-  .vertical-text {
-    font-size: clamp(18px, 6vw, 40px);
-  }
-
-  #name {
-    font-size: clamp(28px, 9vw, 60px);
-  }
-
-  #special-text {
-    font-size: clamp(19px, 6vw, 40px);
-  }
-
   #firstSection {
     justify-content: flex-end;
   }
 
-  #myPictureIMG {
-    height: clamp(280px, 60vh, 430px);
-  }
-
   #introduction {
     width: 100%;
-  }
-
-  .mainContainer {
-    background-size: 158% 100%;
   }
 }
 

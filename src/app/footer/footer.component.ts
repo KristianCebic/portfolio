@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -10,6 +10,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
+  constructor(private router: Router){}
   scrollToContainer(elementId: string): void {
     const element = document.getElementById(elementId);
     if (element) {
@@ -26,5 +27,10 @@ export class FooterComponent {
 
   liveTest(url: string) {
     window.open(url, '_blank');
+  }
+
+  scrollToKristian() {
+    this.router.navigateByUrl('mainPage');
+    setTimeout(() => this.scrollToContainer('firstSection'), 100);
   }
 }

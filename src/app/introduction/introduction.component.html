@@ -1,16 +1,18 @@
 <div class="mainContainer">
-
-  <div style="flex-direction: column;" class="sectionMargin">
-
+  <div style="flex-direction: column" class="sectionMargin">
     <section id="firstSection">
-  
       <div id="myPicture">
-        <img id="myPictureIMG" src="assets/img/newPictureBrownEyes.png"/>
+        <img id="myPictureIMG" src="assets/img/newPictureBrownEyes.png" />
       </div>
-    
+
       <div id="introduction">
         <div class="introduction">
-          <div class="vertical-text">
+          <div
+            class="vertical-text"
+            [ngClass]="{
+              'vertical-text-smaller-height': service.changeHeightOfIAmElement
+            }"
+          >
             {{ "I am" | translate }}
           </div>
           <div id="second-container">
@@ -18,40 +20,43 @@
             <div id="special-text">{{ "FRONTEND DEVELOPER" | translate }}</div>
           </div>
         </div>
-    
-        <div id="letsTalkDiv" class="button" (click)="scrollToContainer('contact')">
+
+        <div
+          id="letsTalkDiv"
+          class="button"
+          (click)="scrollToContainer('contact')"
+        >
           {{ "talk!" | translate }}
         </div>
       </div>
-    
-      <div class="scrollDown">{{ "Scroll down" | translate }} -></div>
     </section>
-
   </div>
 
   <div id="div1">
     <div class="purpleLine2"></div>
-  
+
     <div id="socialMedia" class="content">
-      <img
-        id="social_media1"
-        class="socialMediaImg"
-        src="assets/img/social_media1.png"
-        (click)="liveTest('https://github.com/KristianCebic')"
-      />
-      <img
-        (click)="scrollToContainer('contact')"
-        class="socialMediaImg"
-        src="assets/img/social_media2.png"
-        alt=""
-      />
-      <img
-        class="socialMediaImg"
-        src="assets/img/social_media3.png"
-        (click)="
-          liveTest('https://www.linkedin.com/in/kristian-cebic-8b1ab424b/')
-        "
-      />
+      <div class="gap30">
+        <img
+          id="social_media1"
+          class="socialMediaImg"
+          src="assets/img/social_media1.png"
+          (click)="liveTest('https://github.com/KristianCebic')"
+        />
+        <img
+          (click)="scrollToContainer('contact')"
+          class="socialMediaImg"
+          src="assets/img/social_media2.png"
+          alt=""
+        />
+        <img
+          class="socialMediaImg"
+          src="assets/img/social_media3.png"
+          (click)="
+            liveTest('https://www.linkedin.com/in/kristian-cebic-8b1ab424b/')
+          "
+        />
+      </div>
       <div
         id="email"
         class="font_size14"
@@ -60,7 +65,5 @@
         webdevelopment&#64;kristian-cebic.ch
       </div>
     </div>
-
   </div>
-
 </div>

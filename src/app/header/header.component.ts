@@ -4,16 +4,13 @@ import { MenuOverlayComponent } from '../menu-overlay/menu-overlay.component';
 import { CommonModule } from '@angular/common';
 import { RouterLink, Router } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { VariableServiceService } from '../variable-service.service';
+import { VariableServiceService } from '../services/variable-service.service';
 
 @Component({
   selector: 'app-header',
   standalone: true,
   imports: [
-    AppComponent,
-    MenuOverlayComponent,
     CommonModule,
-    RouterLink,
     TranslateModule,
   ],
   templateUrl: './header.component.html',
@@ -114,6 +111,7 @@ export class HeaderComponent {
       }
       this.translate.use('en');
     }
+    this.variableService.changeHeightOfIAmElement = !this.variableService.changeHeightOfIAmElement;
   }
 
   onHeaderClick($event: MouseEvent) {

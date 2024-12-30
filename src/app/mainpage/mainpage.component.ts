@@ -11,7 +11,8 @@ import { AppComponent } from '../app.component';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
-import { VariableServiceService } from '../variable-service.service';
+import { VariableServiceService } from '../services/variable-service.service';
+import { ReviewComponent } from '../review/review.component';
 
 @Component({
   selector: 'app-mainpage',
@@ -23,12 +24,11 @@ import { VariableServiceService } from '../variable-service.service';
     MySkillsComponent,
     PortfolioComponent,
     ContactComponent,
-    FooterComponent,
     MenuOverlayComponent,
-    AppComponent,
-    RouterOutlet,
     CommonModule,
     TranslateModule,
+    FooterComponent,
+    ReviewComponent
   ],
   templateUrl: './mainpage.component.html',
   styleUrl: './mainpage.component.scss'
