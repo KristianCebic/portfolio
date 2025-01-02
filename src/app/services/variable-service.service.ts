@@ -8,6 +8,7 @@ export class VariableServiceService {
   currentFlag?: string;
   menuOverlay: boolean = false;
   changeHeightOfIAmElement: boolean = false;
+  iAm: boolean = true;
 
   constructor() {
     if (!this.currentFlag) {

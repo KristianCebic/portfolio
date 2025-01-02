@@ -1,7 +1,6 @@
 {
   "About me": "Über mich",
   "Skills": "Fähigkeiten",
-  "I am": "Ich bin",
   "FRONTEND DEVELOPER": "FRONTEND ENTWICKLER",
   "talk!": "Lass uns reden!",
   "AboutMeText": "Ich bin ein engagierter Frontend Developer aus der Schweiz mit umfassender Erfahrung in der Entwicklung benutzerfreundlicher und responsiver Webanwendungen. Mein technisches Know-how umfasst fortgeschrittene Kenntnisse in JavaScript, Angular, TypeScript, sowie HTML, CSS, SCSS, und Bootstrap. Durch mein Studium an der Developer Akademie habe ich mein Wissen durch projektbasiertes Lernen weiter vertieft und über 15 Projekte erfolgreich umgesetzt, darunter eine Task-Management-Web-App und interaktive Spiele. Diese technische Kompetenz kombiniere ich mit ausgeprägten Soft Skills wie Teamarbeit, Problemlösungsfähigkeit und Kreativität, die ich in meiner früheren Karriere als Chef in einer hochdruckbelasteten Küchenumgebung entwickelt habe. Mit dieser einzigartigen Kombination von Fähigkeiten strebe ich eine Position als Webentwickler in Zürich an, um innovative technische Lösungen zu entwickeln und umzusetzen.",
@@ -30,7 +29,7 @@
   "Your email": "Deine E-mail-Adresse",
   "Your message": "Deine Nachricht",
   "Information according to": "Information gemäss",
-  "Impressum": "Imprint",
+  "Impressum": "Impressum",
   "Please enter a name": "Bitte geben Sie den Namen ein",
   "Please enter an email": "Bitte geben Sie die E-mail-Adresse ein",
   "Please enter a message": "Bitte geben Sie die Nachricht ein",

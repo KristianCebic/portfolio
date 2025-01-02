@@ -137,6 +137,8 @@ export class MenuOverlayComponent {
       }
       this.translate.use('en');
     }
+
+    this.variableService.iAm = !this.variableService.iAm;
   }
 
   onOverlayClick($event: MouseEvent) {

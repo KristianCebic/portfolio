@@ -1,7 +1,6 @@
 {
   "About me": "About me",
   "Skills": "Skills",
-  "I am": "I am",
   "FRONTEND DEVELOPER": "FRONTEND DEVELOPER",
   "talk!": "Let's talk!",
   "AboutMeText": "I am a dedicated Frontend Developer from Switzerland with extensive experience in developing user-friendly and responsive web applications. My technical expertise includes advanced knowledge in JavaScript, Angular, TypeScript, as well as HTML, CSS, SCSS, and Bootstrap. Through my studies at the Developer Academy, I have deepened my knowledge through project-based learning and successfully implemented over 15 projects, including a task management web app and interactive games. I combine this technical competence with strong soft skills such as teamwork, problem-solving ability, and creativity, which I developed in my previous career as a chef in a high-pressure kitchen environment. With this unique combination of skills, I am aiming for a position as a web developer in Zurich to develop and implement innovative technical solutions.",
@@ -29,7 +28,7 @@
   "Your name": "Your name",
   "Your email": "Your email",
   "Your message": "Your message",
-  "Impressum": "Impressum",
+  "Impressum": "Legal Notice",
   "Please enter a name": "Please enter a name",
   "Please enter an email": "Please enter an email",
   "Please enter a message": "Please enter a message",

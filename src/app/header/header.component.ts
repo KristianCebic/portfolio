@@ -112,6 +112,7 @@ export class HeaderComponent {
       this.translate.use('en');
     }
     this.variableService.changeHeightOfIAmElement = !this.variableService.changeHeightOfIAmElement;
+    this.variableService.iAm = !this.variableService.iAm
   }
 
   onHeaderClick($event: MouseEvent) {

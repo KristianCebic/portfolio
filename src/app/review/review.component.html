@@ -1,3 +1,23 @@
-<div class="review">
-
+<div class="section1 marginUpBetweenSections">
+  <div class="profileCard">
+    <img *ngIf="tobias" src="assets/img/tobias_reize.jpg" alt="recension"/>
+    <img *ngIf="chris" style="height: 139px;" src="assets/img/christian_frei.jpeg" alt="recension1"/>
+  </div>
+  <div class="purpleLine"></div>
+</div>
+<div class="recension">
+    <img src="assets/img/apostroph.svg" alt="''">
+    <span #recensionText class="text">{{text}}</span>
+    <div class="teamPartner">
+        <div class="purpleLine2"></div>
+        <span #name class="text">{{nameRecension}}</span>
+    </div>
+</div>
+<div class="switchBetweenComments">
+  <img src="assets/img/arrow_back.svg" alt="arrow_back" (click)="showAnotherRecension()">
+  <div class="gap20">
+    <img #dott1 src="{{d1}}" alt="dott1" (click)="showAnotherRecension()">
+    <img #dott2 src="{{d2}}" alt="dott2" (click)="showAnotherRecension()">
+  </div>
+  <img src="assets/img/arrow_forward.svg" alt="arrow_forward" (click)="showAnotherRecension()">
 </div>

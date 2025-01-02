@@ -5,7 +5,7 @@ section {
 
 #aboutMe {
   position: relative;
-  margin-top: 10%;
+  margin-top: 3%;
 }
 
 .socialMediaImg {
@@ -109,7 +109,7 @@ section {
 
   #div2 {
     width: 50vw;
-    margin-right: 10%;
+    margin-right: 2%;
   }
 
   .backGroundShadow {
@@ -130,7 +130,7 @@ section {
 
   #parentHeadDiv {
     display: flex;
-    width: 30vw;
+    width: 50%;
     justify-content: center;
     align-items: center;
   }
@@ -156,4 +156,8 @@ section {
   margin-left: 10%;
   margin-right: 10%;
   width: unset;
+  @media (min-width: 1024px) {
+    width: 100%;
+    margin-right: 0%;
+  }
 }

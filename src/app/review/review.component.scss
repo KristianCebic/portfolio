@@ -1,3 +1,98 @@
+@import "../../styles.scss";
+
 .review {
-    height: 400px;
+  height: 400px;
+}
+
+.profileCard {
+  width: 144px;
+  height: 144px;
+  border-radius: 1000px;
+  border: 3px solid #9747ff;
+  overflow: hidden;
+  z-index: 999;
+  img {
+    height: 208px;
+  }
+}
+
+.purpleLine {
+  position: absolute;
+  width: 50%;
+  transform: translateX(50%);
+}
+
+.section1 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recension {
+  position: relative;
+  border: 4px solid #70e61c;
+  padding: 16px;
+  gap: 24px;
+  border-radius: 32px;
+  margin-right: 10%;
+  margin-left: 10%;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+
+  img {
+    position: absolute;
+    top: -40px;
+    left: -15px;
+  }
+}
+
+.purpleLine2 {
+  width: 55px;
+  border-radius: 32px;
+}
+
+.teamPartner {
+  @include dFlex($fd: column, $jc: flex-start, $ai: flex-start);
+  width: 100%;
+  gap: 8px;
+}
+
+.switchBetweenComments {
+  @include dFlex($fd: row, $jc: center, $ai: center);
+  width: 100%;
+  gap: 20px;
+  margin-top: 32px;
+
+  img {
+    cursor: pointer;
+    &:hover {
+      scale: 1.3;
+    }
+  }
+}
+
+.gap20 {
+  display: flex;
+  gap: 20px;
+}
+
+.fade-in-from-down {
+  animation-name: fadeInFromDown;
+  animation-timing-function: ease-in-out;
+  animation-duration: 100ms;
+}
+
+@keyframes fadeInFromDown {
+  from {
+    opacity: 0;
+    transform: translateY(+100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -19,18 +19,10 @@ section {
   line-height: 77px;
   letter-spacing: 0em;
   text-align: left;
-  font-size: clamp(10px, 2vw, 25px);
+  font-size: 18px;
 
-  @media (max-width: 341px){
-    font-size: 12px;
-  }
-
-  @media (max-width: 846px){
-    font-size: 14px;
-  }
-
-  @media (max-width: 649px){
-    font-size: 0;
+  @media (min-width: 970px) {
+    font-size: 26px;
   }
 }
 
@@ -66,12 +58,6 @@ section {
   padding-right: 30px;
   padding-bottom: 200px;
   top: 55vh;
-}
-
-#name {
-  font-weight: 700;
-  font-size: clamp(28px,4.1vw,60px);
-  text-align: start;
 }
 
 #special-text {
@@ -224,6 +210,8 @@ section {
     background-position: 0px -164px;
   }
 }
+
+
 
 @media screen and (min-width: 1024px) and (max-height: 600px) {
   #photo_shadows {
@@ -394,5 +382,36 @@ section {
 @media screen and (min-width: 3600px) {
   .purpleLine2 {
     width: 22%;
+  }
+}
+
+#name {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: start;
+  margin: 0;
+
+  @media (min-width: 607px) {
+    font-size: 28px;
+  }
+
+  @media (min-width: 706px) {
+    font-size: 32px;
+  }
+
+  @media (min-width: 806px) {
+    font-size: 39px;
+  }
+
+  @media (min-width: 970px) {
+    font-size: 45px;
+  }
+
+  @media (min-width: 1165px) {
+    font-size: 50px;
+  }
+
+  @media (min-width: 1300px) {
+    font-size: 58px;
   }
 }

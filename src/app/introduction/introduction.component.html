@@ -8,15 +8,16 @@
       <div id="introduction">
         <div class="introduction">
           <div
+            *ngIf="service.iAm"
             class="vertical-text"
             [ngClass]="{
               'vertical-text-smaller-height': service.changeHeightOfIAmElement
             }"
           >
-            {{ "I am" | translate }}
+            I am
           </div>
           <div id="second-container">
-            <div id="name">Kristian Cebic</div>
+            <h1 id="name">Kristian Cebic</h1>
             <div id="special-text">{{ "FRONTEND DEVELOPER" | translate }}</div>
           </div>
         </div>
@@ -40,18 +41,18 @@
         <img
           id="social_media1"
           class="socialMediaImg"
-          src="assets/img/social_media1.png"
+          src="assets/img/github_button.svg"
           (click)="liveTest('https://github.com/KristianCebic')"
         />
         <img
           (click)="scrollToContainer('contact')"
           class="socialMediaImg"
-          src="assets/img/social_media2.png"
+          src="assets/img/email button.svg"
           alt=""
         />
         <img
           class="socialMediaImg"
-          src="assets/img/social_media3.png"
+          src="assets/img/linkedin button.svg"
           (click)="
             liveTest('https://www.linkedin.com/in/kristian-cebic-8b1ab424b/')
           "
